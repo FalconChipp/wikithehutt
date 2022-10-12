@@ -23,7 +23,7 @@ export default function Weapons({ data }) {
         
         <section>
           <h2 className="text-white font-jedi text-center text-6xl p-7">Sabers</h2>
-          <div className="grid cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-2 container-center">
+          <div className="grid grid-cols-4 px-8 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-2 container-center">
             <div className="border border-solid border-redSaber text-center">
               {/*<GatsbyImage image={data.Vader.childImageSharp.gatsbyImageData} alt="Vader" />*/}
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Tatooine</h3>
@@ -50,7 +50,7 @@ export default function Weapons({ data }) {
             </div>
           </div>
 
-          <div className="grid cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-2 container-center">
+          <div className="grid grid-cols-4 px-8 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-2 container-center">
             <div className="border border-solid border-redSaber text-center">
               {/*<GatsbyImage image={data.Vader.childImageSharp.gatsbyImageData} alt="Vader" />*/}
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Coruscant</h3>
@@ -77,7 +77,7 @@ export default function Weapons({ data }) {
             </div>
           </div>
 
-          <div className="grid cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-2 container-center">
+          <div className="grid grid-cols-4 px-8 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-2 container-center">
             <div className="border border-solid border-redSaber text-center">
               {/*<GatsbyImage image={data.Vader.childImageSharp.gatsbyImageData} alt="Vader" />*/}
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Dagobah</h3>
@@ -104,7 +104,7 @@ export default function Weapons({ data }) {
             </div>
           </div>
 
-          <div className="grid cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-2 container-center">
+          <div className="grid grid-cols-4 px-8 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-2 container-center">
             <div className="border border-solid border-redSaber text-center">
               {/*<GatsbyImage image={data.Vader.childImageSharp.gatsbyImageData} alt="Vader" />*/}
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Mandalore</h3>
