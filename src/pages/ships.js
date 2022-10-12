@@ -21,7 +21,7 @@ export default function Shps({ data }) {
         </section>
 
         <section>
-          <div className="grid cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-4 pt-7 container-center">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-4 pt-7 container-center px-8">
             <div className="shipBoostGlow text-center pb-10">
               <GatsbyImage image={data.xwing.childImageSharp.gatsbyImageData} alt="Slave 1" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Slave 1</h3>

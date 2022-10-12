@@ -23,7 +23,7 @@ export default function Characters({ data }) {
         
         
         <section>
-          <div className="grid cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-4 pt-7 container-center">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-4 pt-7 container-center px-8">
             <div className="saberGlowLight text-center pb-10">
               <GatsbyImage image={data.chewbacca.childImageSharp.gatsbyImageData} alt="Chewbacca" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Chewbacca</h3>
@@ -54,7 +54,7 @@ export default function Characters({ data }) {
 
 
         <section>
-          <div className="grid cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
             <div className="saberGlowLight text-center pb-10">
               <GatsbyImage image={data.grogu.childImageSharp.gatsbyImageData} alt="Grogu - just the cuest really" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Grogu</h3>
@@ -84,7 +84,7 @@ export default function Characters({ data }) {
 
 
         <section>
-          <div className="grid cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8 ">
             <div className="saberGlowLight text-center pb-10">
               <GatsbyImage image={data.anakinskywalker.childImageSharp.gatsbyImageData} alt="Anakin Skywalker" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Anakin Skywalker</h3>
@@ -114,7 +114,7 @@ export default function Characters({ data }) {
 
 
         <section>
-          <div className="grid cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
             <div className="saberGlowLight text-center pb-10">
               <GatsbyImage image={data.hansolo.childImageSharp.gatsbyImageData} alt="Han Solo" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Han Solo</h3>
@@ -143,7 +143,7 @@ export default function Characters({ data }) {
         </section>
 
         <section>
-          <div className="grid cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
             <div className="saberGlowLight text-center pb-10">
               <GatsbyImage image={data.rey.childImageSharp.gatsbyImageData} alt="Rey" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Rey</h3>
@@ -173,7 +173,7 @@ export default function Characters({ data }) {
 
 
         <section>
-          <div className="grid cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
             <div className="saberGlowLight text-center pb-10">
               <GatsbyImage image={data.bokatan.childImageSharp.gatsbyImageData} alt="Bo-Katan Kryze" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Bo-Katan Kryze</h3>
@@ -203,7 +203,7 @@ export default function Characters({ data }) {
 
 
         <section>
-          <div className="grid cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
             <div className="saberGlowLight text-center pb-10">
               <GatsbyImage image={data.c3po.childImageSharp.gatsbyImageData} alt="C3P0" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">C3P0</h3>
@@ -233,7 +233,7 @@ export default function Characters({ data }) {
 
 
         <section>
-          <div className="grid cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
             <div className="saberGlowLight text-center pb-10">
             <GatsbyImage image={data.captainrex.childImageSharp.gatsbyImageData} alt="Captain Rex - Whose a good boy" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Captain Rex</h3>

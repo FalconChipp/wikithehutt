@@ -23,7 +23,7 @@ export default function Characters({ data }) {
         
         <section>
           <h2 className="text-center font-jedi text-4xl text-white pb-10 pt-10">Choose Your Side!</h2>
-          <div className="grid cols-1 sm:grid-cols-2 md:grid-cols-2 gap-5 pb-32 container-center">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-2 gap-5 pb-32 container-center px-8">
 
             <div className="border border-solid border-blueSaber text-center pb-10">
             <GatsbyImage image={data.lightside.childImageSharp.gatsbyImageData} alt="Light Side Logo" />

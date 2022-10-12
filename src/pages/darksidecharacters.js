@@ -19,7 +19,7 @@ export default function Characters({ data }) {
         
         
         <section>
-          <div className="grid cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-4 pt-7 container-center">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-4 pt-7 container-center px-8">
             <div className="saberGlowDark text-center pb-10">
               <GatsbyImage image={data.darthvader.childImageSharp.gatsbyImageData} alt="Darth Vader's Linkedin Profile Pic The empire made him take when he really didn't want to so he just looks awkward" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Darth `ader</h3>
@@ -49,7 +49,7 @@ export default function Characters({ data }) {
         </div>
 
         <section>
-          <div className="grid cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
             <div className="saberGlowDark text-center pb-10">
               <GatsbyImage image={data.starkiller.childImageSharp.gatsbyImageData} alt="Star Killer" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Starkiller</h3>
@@ -79,7 +79,7 @@ export default function Characters({ data }) {
 
 
         <section>
-          <div className="grid cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
             <div className="saberGlowDark text-center pb-10">
               <GatsbyImage image={data.assajj.childImageSharp.gatsbyImageData} alt="Assajj Ventress" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Assajj `entress</h3>
@@ -109,7 +109,7 @@ export default function Characters({ data }) {
 
 
         <section>
-          <div className="grid cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
             <div className="saberGlowDark text-center pb-10">
               <GatsbyImage image={data.magna.childImageSharp.gatsbyImageData} alt="Magna Guard" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Magna Guard</h3>
@@ -139,7 +139,7 @@ export default function Characters({ data }) {
 
 
         <section>
-          <div className="grid cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
             <div className="saberGlowDark text-center pb-10">
               <GatsbyImage image={data.darthmalek.childImageSharp.gatsbyImageData} alt="Darth Malek" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Darth Malek</h3>
@@ -169,7 +169,7 @@ export default function Characters({ data }) {
 
 
         <section>
-          <div className="grid cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
             <div className="saberGlowDark text-center pb-10">
               <GatsbyImage image={data.darthmalgus.childImageSharp.gatsbyImageData} alt="Darth Malgus" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Darth Malgus</h3>
@@ -199,7 +199,7 @@ export default function Characters({ data }) {
 
 
         <section>
-          <div className="grid cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
             <div className="saberGlowDark text-center pb-10">
               <GatsbyImage image={data.darthtalon.childImageSharp.gatsbyImageData} alt="Darth Talon" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Darth Talon</h3>
@@ -229,7 +229,7 @@ export default function Characters({ data }) {
 
 
         <section>
-          <div className="grid cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
             <div className="saberGlowDark text-center pb-10">
               <GatsbyImage image={data.firstorderex.childImageSharp.gatsbyImageData} alt="First order Executioner" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">First order Executioner</h3>
@@ -259,7 +259,7 @@ export default function Characters({ data }) {
 
 
         <section>
-          <div className="grid cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
             <div className="saberGlowDark text-center pb-10">
               <GatsbyImage image={data.jangofett.childImageSharp.gatsbyImageData} alt="Jango Fett" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Jango Fett</h3>

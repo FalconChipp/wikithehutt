@@ -4,10 +4,7 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     screens: {
-      mobile: {
-        'min': '375px',
-        'max': '400px'
-      },
+
     },
     colors: {
       'transparent': 'transparent',
