@@ -21,7 +21,6 @@ export default function Characters({ data }) {
           </div>
         </section>
         
-        
         <section>
           <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-4 pt-7 container-center px-8">
             <div className="saberGlowLight text-center pb-10">
@@ -52,7 +51,6 @@ export default function Characters({ data }) {
         </section>
         </div>
 
-
         <section>
           <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
             <div className="saberGlowLight text-center pb-10">
@@ -82,7 +80,6 @@ export default function Characters({ data }) {
           </div>
         </section>
 
-
         <section>
           <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8 ">
             <div className="saberGlowLight text-center pb-10">
@@ -111,7 +108,6 @@ export default function Characters({ data }) {
             </div>
           </div>
         </section>
-
 
         <section>
           <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
@@ -171,7 +167,6 @@ export default function Characters({ data }) {
           </div>
         </section>
 
-
         <section>
           <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
             <div className="saberGlowLight text-center pb-10">
@@ -201,7 +196,6 @@ export default function Characters({ data }) {
           </div>
         </section>
 
-
         <section>
           <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
             <div className="saberGlowLight text-center pb-10">
@@ -230,7 +224,6 @@ export default function Characters({ data }) {
             </div>
           </div>
         </section>
-
 
         <section>
           <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
