@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Starjedi";
+    src: url("../fonts/Starjedi.ttf");
+}
+html {
+    @apply bg-site bg-contain bg-repeat-y;
+}
+.bg-brand {
+    @apply bg-cover bg-no-repeat bg-top;
+    background-image: linear-gradient(
+        rgba(18, 26, 46, 0.8)
+        rgba(18,26,46.0.8)
+    ),
+    background-image url(../../static/images/background.png)
+}
+.container-center {
+    @apply container mx-auto;
+
+}
+.btn {
+    @apply font-dosis text-xl transition duration-500 ease-in-out bg-blueSaber text-white font-bold px-8 py-4 rounded-full focus:outline-none focus:ring transform hover:-translate-y-1 hover:scale-110;
+
+}
+.darksidebtn {
+    @apply font-dosis text-xl transition duration-500 ease-in-out bg-redSaber text-white font-bold px-8 py-4 rounded-full focus:outline-none focus:ring transform hover:-translate-y-1 hover:scale-110;
+}
+.chewybtn {
+    @apply font-dosis text-xl transition duration-500 ease-in-out bg-chewbacca text-white font-bold px-8 py-4 rounded-full focus:outline-none focus:ring transform hover:-translate-y-1 hover:scale-110;
+}
+.greenbtn {
+    @apply font-dosis text-xl transition duration-500 ease-in-out bg-greenSaber text-white font-bold px-8 py-4 rounded-full focus:outline-none focus:ring transform hover:-translate-y-1 hover:scale-110;
+}
+
+p {
+    @apply text-white font-dosis;
+}
+
+.saberGlowDark {
+  border:2px solid;
+  animation: saberFlash 5s linear infinite;
+}
+
+.saberGlowLight {
+    border: 2px solid; 
+    animation: saberCalm 5s linear infinite;
+}
+
+.shipBoostGlow {
+    border: 2px solid;
+    animation: shipBoost 5s linear infinite;
+}
