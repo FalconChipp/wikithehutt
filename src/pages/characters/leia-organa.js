@@ -8,7 +8,7 @@ export default function LeiaOrgana({data}) {
     return (
         <Layout>
             <section className="w-full grid">
-                <h1 className="text-white text-center font-jedi text-6xl pt-5 pb-10">Leia Organa</h1>
+                <h1 className="text-white text-center font-jedi text-6xl pt-5 pb-10">Leia organa</h1>
                 <div className="grid grid-cols-2 gap-5 container-center">
                     <div>
                         {/*<GatsbyImage image={data.kylo.childImageSharp.gatsbyImageData} alt="Kylo Ren"/>*/}
