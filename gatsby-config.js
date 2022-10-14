@@ -40,8 +40,7 @@
       `gatsby-plugin-image`,
       `gatsby-plugin-sharp`,
       `gatsby-transformer-sharp`, // Needed for dynamic images
-      `three`,
-      `react-three-fiber`,
+      `@react-three/fiber`,
       {
         resolve: `gatsby-source-filesystem`,
         options: {

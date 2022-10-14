@@ -2,8 +2,6 @@ import React from "react";
 import Layout from "../../components/Layout";
 import { Link, graphql } from "gatsby";
 import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
-import canvasTest from "../../components/Canvas";
-
 
 export const Head = () => <title>A-Wing</title>
 export default function AWing({data}) {
@@ -13,7 +11,6 @@ export default function AWing({data}) {
                 <h1 className="text-white text-center font-jedi text-6xl pt-5 pb-10">A-Wing</h1>
                 <div className="grid grid-cols-2 gap-5 container-center">
                     <div>
-                        <canvasTest/>
                     </div>
                     <div className="align-center">
                         <h3 className="text-white font-dosis text-4xl">Alignment: </h3>
