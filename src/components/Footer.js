@@ -9,12 +9,12 @@ export default function Footer() {
                 </div>
                 <div className="text-white text-lg">
                     <h2 className="font-jedi text-2xl text-center">Links</h2>
-                    <div><Link className="font-dosis" to="#">Home</Link></div>
-                    <div><Link className="font-dosis" to="#">Characters</Link></div>
-                    <div><Link className="font-dosis" to="#">Weapons</Link></div>
-                    <div><Link className="font-dosis" to="#">Ships</Link></div>
-                    <div><Link className="font-dosis" to="#">Planets</Link></div>
-                    <div><Link className="font-dosis" to="#">Timeline</Link></div>
+                    <div><Link className="font-dosis" to="/">Home</Link></div>
+                    <div><Link className="font-dosis" to="/characters">Characters</Link></div>
+                    <div><Link className="font-dosis" to="/weapons">Weapons</Link></div>
+                    <div><Link className="font-dosis" to="/ships">Ships</Link></div>
+                    <div><Link className="font-dosis" to="/planets">Planets</Link></div>
+                    <div><Link className="font-dosis" to="/timeline">Timeline</Link></div>
                 </div>
                 <div className="text-white">
                     <h2 className="font-jedi text-2xl text-center text-white">Contact/Legal</h2>
