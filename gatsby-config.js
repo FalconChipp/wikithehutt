@@ -46,6 +46,16 @@
           name: `images`,
           path: `${__dirname}/src/images`,
         },
+      }, 
+      `gatsby-plugin-breadcrumb`, {
+        resolve: `gatsby-plugin-breadcrumb`,
+        options: {
+          locations: {
+            pathname: "/",
+          },
+          crumbLabel: "Home",
+          crumbSeparator: ' / '
+        }
       }
   ],
 }

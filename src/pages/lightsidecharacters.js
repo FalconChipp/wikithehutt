@@ -3,14 +3,16 @@ import Layout from "../components/Layout";
 import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
 import { graphql, Link } from "gatsby";
 import { siteMetadata } from "../../gatsby-config";
+import { Breadcrumb } from "gatsby-plugin-breadcrumb";
 
 
 export const Head = () => <title>{siteMetadata.title} - {siteMetadata.lightsidechars.title}</title>
-export default function Characters({ data }) {
+export default function Characters({ data, location }) {
     return (
       console.log(data),
       <Layout>
       <div className="w-full">
+        <Breadcrumb location={location} crumbLabel="Light Side Characters"></Breadcrumb>
         <section className="bg-cover bg-center bg-charactersBg max-h-max md:px-10 xl:px-40 pt-32 text-white py-32">
           <h1 className="pt-15 py-4 text-center font-jedi text-6xl">Light Side Characters</h1>
           <p className="py-4 text-center text-xl">
