@@ -53,3 +53,7 @@ p {
     border: 2px solid;
     animation: shipBoost 5s linear infinite;
 }
+
+.breadcrumb {
+    @apply font-dosis text-lg text-white mx-5 ;
+}

@@ -4,10 +4,11 @@ import { Link, graphql } from "gatsby";
 import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
 
 export const Head = () => <title>Darth Traya</title>
-export default function Traya({data}) {
+export default function Traya({data, location}) {
     return (
         <Layout>
             <section className="w-full grid">
+                <Breadcrumb location={location} crumbLabel="Darth Traya"></Breadcrumb>
                 <h1 className="text-white text-center font-jedi text-6xl pt-5 pb-10">Darth Traya</h1>
                 <div className="grid grid-cols-2 gap-5 container-center">
                     <div>
