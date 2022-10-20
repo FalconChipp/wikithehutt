@@ -1,7 +1,9 @@
 import React from "react";
 import Layout from "../../components/Layout";
 import { Link, graphql } from "gatsby";
-import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
+import { StaticImage, GatsbyImage } from "gatsby-plugin-image";
+import { Breadcrumb } from "gatsby-plugin-breadcrumb";
+
 
 export const Head = () => <title>Darth Traya</title>
 export default function Traya({data, location}) {

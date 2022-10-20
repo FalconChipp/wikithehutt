@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout";
 import { Link, graphql } from "gatsby";
 import { StaticImage, GatsbyImage } from "gatsby-plugin-image";
-import { Breadcrumb } from "gatsby-plugin-image"; 
+import { Breadcrumb } from "gatsby-plugin-breadcrumb"; 
 
 export const Head = () => <title>Starkiller</title>
 export default function Starkiller({data, location}) {
