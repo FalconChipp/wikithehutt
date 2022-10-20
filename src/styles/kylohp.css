@@ -1,4 +1,4 @@
-.page { @apply grid items-center justify-center h-[70vh] px-0 pb-0 mt-0 relative; }
+.page { @apply grid items-center justify-center h-[800px] px-0 pb-0 mt-0 relative; }
 
 .page-content {
 	@apply relative overflow-hidden bg-581E85 w-550 h-540 rounded-50 mt-[-70px]; 
