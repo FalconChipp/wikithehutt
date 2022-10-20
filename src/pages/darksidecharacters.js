@@ -19,7 +19,6 @@ export default function Characters({ data, location }) {
           </div>
         </section>
         
-        
         <section>
           <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-4 pt-7 container-center px-8">
             <div className="saberGlowDark text-center pb-10">
