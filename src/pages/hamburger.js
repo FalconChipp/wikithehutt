@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react"
+/* import React, { useState, useEffect } from "react"
 import styled, { createGlobalStyle } from "styled-components"
 
 const Global = createGlobalStyle`
@@ -102,4 +102,4 @@ const hamburger = () => {
     )
 }
 
-export default hamburger
+export default hamburger */
