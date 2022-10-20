@@ -1,13 +1,15 @@
 import React from "react";
 import Layout from "../../components/Layout";
 import { Link, graphql } from "gatsby";
-import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
+import { StaticImage, GatsbyImage } from "gatsby-plugin-image";
+import { Breadcrumb } from "gatsby-plugin-breadcrumb";
 
 export const Head = () => <title>Krrsantan</title>
-export default function Krrsantan({data}) {
+export default function Krrsantan({data, location}) {
     return (
         <Layout>
             <section className="w-full grid">
+                <Breadcrumb location={location} crumbLabel="Krrsantan"></Breadcrumb>
                 <h1 className="text-white text-center font-jedi text-6xl pt-5 pb-10">Krrsantan</h1>
                 <div className="grid grid-cols-2 gap-5 container-center">
                     <div>

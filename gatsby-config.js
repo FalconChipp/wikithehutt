@@ -37,16 +37,26 @@
         }
     },
   plugins: [
+      `gatsby-plugin-styled-components`,
       `gatsby-plugin-image`,
       `gatsby-plugin-sharp`,
       `gatsby-transformer-sharp`, // Needed for dynamic images
-      `gatsby-transformer-json`, 
       {
         resolve: `gatsby-source-filesystem`,
         options: {
           name: `images`,
           path: `${__dirname}/src/images`,
         },
+      }, 
+      `gatsby-plugin-breadcrumb`, {
+        resolve: `gatsby-plugin-breadcrumb`,
+        options: {
+          locations: {
+            pathname: "/",
+          },
+          crumbLabel: "Home",
+          crumbSeparator: ' / '
+        }
       }
   ],
 }

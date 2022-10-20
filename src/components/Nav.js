@@ -1,10 +1,13 @@
-import { Link } from "gatsby";
+import { Link, useStaticQuery, graphql } from "gatsby";
 import React from "react";
+import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 
-export default function Navbar() {
-    return (
+
+export default function Navbar({ data }) {
+  return (
         <nav className="mt-[35px] bg-transparent mb-[35px] mobile:hidden">
-            <div className="font-jedi container-2xl text-2xl text-center text-white">
+            <div className="font-jedi grid grid-cols-7 text-3xl text-center text-white items-baseline">
+                <Link to="/"><StaticImage src="../images/Wiki-The-Hutt-Logo.png" width="250" alt="Logo" className="mt-[-20px]" placeholder="blurred"/></Link>
                 <Link className="m-5 pt-1 pb-2 px-3 hover:shadow-redSaber hover:text-redSaber rounded-xl" to="/">Home</Link>
                 <Link className="m-5 pt-1 pb-2 px-3 hover:shadow-blueSaber hover:text-blueSaber rounded-xl" to="/characters">Characters</Link>
                 <Link className="m-5 pt-1 pb-2 px-3 hover:shadow-greenSaber hover:text-greenSaber rounded-xl" to="/weapons">Weapons</Link>

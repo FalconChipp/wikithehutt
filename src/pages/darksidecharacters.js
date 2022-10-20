@@ -3,12 +3,14 @@ import Layout from "../components/Layout";
 import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
 import { graphql, Link } from "gatsby";
 import { siteMetadata } from "../../gatsby-config";
+import { Breadcrumb } from "gatsby-plugin-breadcrumb";
 
 export const Head = () => <title>{siteMetadata.title} - {siteMetadata.darksidechars.title}</title>
-export default function Characters({ data }) {
+export default function Characters({ data, location }) {
     return (
       <Layout>
       <div className="w-full">
+      <Breadcrumb location={location} crumbLabel="Dark Side Characters"></Breadcrumb>
         <section className="bg-cover bg-center bg-charactersBg max-h-max md:px-10 xl:px-40 pt-32 text-white py-32">
           <h1 className="pt-15 py-4 text-center font-jedi text-6xl">Dark Side Characters</h1>
           <p className="py-4 text-center text-xl">Here you can view all the Dark Side Characters</p>
@@ -16,7 +18,6 @@ export default function Characters({ data }) {
             <Link to="/lightsidecharacters"><button className="btn">View Light Side Characters</button></Link>
           </div>
         </section>
-        
         
         <section>
           <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-4 pt-7 container-center px-8">
@@ -30,7 +31,7 @@ export default function Characters({ data }) {
               <GatsbyImage image={data.darthsidious.childImageSharp.gatsbyImageData} alt="Darth Sidious - WTF IS THAT" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Darth Sidious</h3>
               <p className="pb-7 text-lg mx-8">Darth Sidious to go here with intro text and then to also have an image of him and once they have clicked on him it would take them to his individual page.</p>
-              <Link to="characters/darth-sideous"><button className="darksidebtn">View Bio</button></Link>
+              <Link to="characters/darth-sidious"><button className="darksidebtn">View Bio</button></Link>
             </div>
             <div className="saberGlowDark text-center pb-10">
             <GatsbyImage image={data.darthmaul.childImageSharp.gatsbyImageData} alt="Darth Maul's Pouting Face" />
