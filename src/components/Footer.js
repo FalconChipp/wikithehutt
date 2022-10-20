@@ -1,20 +1,23 @@
 import { Link } from "gatsby";
 import React from "react";
+import { StaticImage } from "gatsby-plugin-image";
 
 export default function Footer() {
     return (
             <div className="w-full grid grid-cols-4 pb-5 bg-nav pt-5 gap-5">
                 <div>
-                    <h2 className="font-jedi text-2xl text-center text-white">logo - to add image later</h2>
+                    <Link to="/"><StaticImage src="../images/Wiki-The-Hutt-Logo.png" width="500" className="mx-8" alt="Logo" placeholder="blurred"/></Link>
                 </div>
                 <div className="text-white text-lg">
                     <h2 className="font-jedi text-2xl text-center">Links</h2>
-                    <div><Link className="font-dosis" to="/">Home</Link></div>
-                    <div><Link className="font-dosis" to="/characters">Characters</Link></div>
-                    <div><Link className="font-dosis" to="/weapons">Weapons</Link></div>
-                    <div><Link className="font-dosis" to="/ships">Ships</Link></div>
-                    <div><Link className="font-dosis" to="/planets">Planets</Link></div>
-                    <div><Link className="font-dosis" to="/timeline">Timeline</Link></div>
+                    <div className="grid grid-cols-2">
+                        <div><Link className="font-dosis" to="/">Home</Link></div>
+                        <div><Link className="font-dosis" to="/characters">Characters</Link></div>
+                        <div><Link className="font-dosis" to="/weapons">Weapons</Link></div>
+                        <div><Link className="font-dosis" to="/ships">Ships</Link></div>
+                        <div><Link className="font-dosis" to="/planets">Planets</Link></div>
+                        <div><Link className="font-dosis" to="/timeline">Timeline</Link></div>
+                    </div>
                 </div>
                 <div className="text-white">
                     <h2 className="font-jedi text-2xl text-center text-white">Contact/Legal</h2>
