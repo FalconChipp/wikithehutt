@@ -3,6 +3,7 @@ import Layout from "../../components/Layout";
 import { Link, graphql } from "gatsby";
 import { StaticImage, GatsbyImage } from "gatsby-plugin-image";
 import { Breadcrumb } from "gatsby-plugin-breadcrumb"; 
+import AnakinSaber from "../../components/Load-Models/LoadAnakin";
 
 export const Head = () => <title>Anakin Skywalker</title>
 export default function AnakinSkywalker({data, location}) {
@@ -13,7 +14,7 @@ export default function AnakinSkywalker({data, location}) {
                 <h1 className="text-white text-center font-jedi text-6xl pt-5 pb-10">Anakin Skywalker</h1>
                 <div className="grid grid-cols-2 gap-5 container-center">
                     <div>
-                        {/*<GatsbyImage image={data.kylo.childImageSharp.gatsbyImageData} alt="Kylo Ren"/>*/}
+                        <AnakinSaber />
                     </div>
                     <div className="align-center">
                         <h3 className="text-white font-dosis text-4xl">Alignment: </h3>
