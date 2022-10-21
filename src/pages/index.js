@@ -24,7 +24,15 @@ export default function Home() {
 			<section>
 				<h2 className="font-dosis text-3xl text-center text-white">Featured Bios</h2>
 				<div className="grid grid-cols-3">
-
+					<div className="pb-10 text-center" >
+						<h2>Col 1</h2>
+					</div>
+					<div className="pb-10 text-center">
+						<h2>Col 2</h2>
+					</div>
+					<div className="pb-10 text-center">
+						<h2>Col 3</h2>
+					</div>
 				</div>
 			</section>
 			{/* https://betterprogramming.pub/working-with-3d-model-in-three-js-e228621141af */}
