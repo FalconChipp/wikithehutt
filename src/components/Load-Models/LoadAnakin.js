@@ -1,7 +1,7 @@
 import React from 'react';
 import { Suspense, useRef } from 'react';
 import { Canvas, useFrame, useLoader } from '@react-three/fiber';
-import { Environment, Html, OrbitControls, useProgress } from '@react-three/drei';
+import { Html, OrbitControls, useProgress } from '@react-three/drei';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 function Loader() {
@@ -13,7 +13,7 @@ const LoadAnakin = (args) => {
   const loadanakin = useRef();
   useFrame(() => {
     if (loadanakin.current) {
-      loadanakin.current.rotation.x += 0;
+      loadanakin.current.rotation.x += 0.007;
       loadanakin.current.rotation.y += 0;
       // loadanakin.current.position.z = (loadanakin.current.position.z + 0.01) % 10;
     }
@@ -24,11 +24,12 @@ const LoadAnakin = (args) => {
 
 export default function AnakinSaber() {
   return (
-    <Canvas shadows style={{ height: '40vh' }}>
+    <Canvas style={{ height: '40vh' }}>
       <Suspense fallback={<Loader />}>
-        <pointLight color="white" position={[10, 10, 10]} intensity={[0.5]}/>
-        <LoadAnakin position={[1, 1, 1]} scale={0.05} rotation-x={0} />
-        <OrbitControls />
+        <ambientLight color="white" position={[10, 10, 10]} intensity={[0.2]}/>
+        <pointLight color="white" position={[0, 0, 0]} intensity={[1]}/> 
+        <LoadAnakin position={[-50, -10, -150]} scale={20} rotation-x={10} />
+        <OrbitControls enabled={false}/>
       </Suspense>
     </Canvas>
   );

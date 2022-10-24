@@ -35,7 +35,6 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			{/* https://betterprogramming.pub/working-with-3d-model-in-three-js-e228621141af */}
       </Layout>
     )
   }
