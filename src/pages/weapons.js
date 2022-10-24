@@ -34,7 +34,7 @@ export default function Weapons({ data }) {
               {/*<GatsbyImage image={data.Chewy.childImageSharp.gatsbyImageData} alt="Chewy" />*/}
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Luke Skywalkers Saber</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              <button className="chewybtn">CTA</button>
+              <Link to="/weapons/lukes-saber"><button className="chewybtn">CTA</button></Link>
             </div>
             <div className="border border-solid border-blueSaber text-center">
               {/*<GatsbyImage image={data.Chewy.childImageSharp.gatsbyImageData} alt="Chewy" />*/}
@@ -67,7 +67,7 @@ export default function Weapons({ data }) {
               {/*<GatsbyImage image={data.Chewy.childImageSharp.gatsbyImageData} alt="Chewy" />*/}
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Anakin Skywalkers Saber</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              <button className="chewybtn">CTA</button>
+              <Link to='/weapons/anakins-saber'><button className="chewybtn">CTA</button></Link>
             </div>
             <div className="border border-solid border-blueSaber text-center">
               {/*<GatsbyImage image={data.Chewy.childImageSharp.gatsbyImageData} alt="Chewy" />*/}
