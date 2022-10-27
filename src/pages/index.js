@@ -7,6 +7,7 @@ import { siteMetadata } from "../../gatsby-config";
 import { Link } from "gatsby";
 
 export const Head = () => <title>{siteMetadata.title}</title>
+
 export default function Home() {
     return (
       <Layout>
