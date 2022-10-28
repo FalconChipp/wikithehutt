@@ -1,9 +1,9 @@
-import { Link, useStaticQuery, graphql } from "gatsby";
+import { Link } from "gatsby";
 import React from "react";
-import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
+import { StaticImage } from "gatsby-plugin-image";
 
 
-export default function Navbar({ data }) {
+export default function Navbar() {
   return (
         <nav className="mt-[35px] bg-transparent mb-[35px] mobile:hidden">
             <div className="font-jedi grid grid-cols-7 text-3xl text-center text-white items-baseline">
