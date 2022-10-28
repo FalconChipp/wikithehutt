@@ -4,7 +4,8 @@ import "../styles/kylohp.css";
 import "../styles/keyframes.css"
 import KyloAni from "../components/KyloAnimation";
 import { siteMetadata } from "../../gatsby-config";
-import { Link } from "gatsby";
+import { Link, graphql } from "gatsby";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 export const Head = () => <title>{siteMetadata.title}</title>
 
@@ -25,23 +26,29 @@ export default function Home() {
 
 			<section>
 				<h2 className="font-dosis text-3xl text-center text-white">Featured Bios</h2>
-				<div className="grid grid-cols-3">
-					<div className="pb-10 text-center" >
+				<div className="grid grid-cols-4 gap-5 pb-5 container-center px-8">
+					<div className="saberGlowLight pb-10 text-center" >
 						{/* <GatsbyImage image={data.[image name].childImageSharp.gatsbyImageData} alt="[image alt]" /> */}
-            			<h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Col 1</h3>
-              			<p className="pb-7 text-lg mx-8">Darth Sion to go here with intro text and then to also have an image of him and once they have clicked on him it would take them to his individual page.</p>
+            			<h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Featured Character</h3>
+              			<p className="pb-7 text-lg mx-8">Short Bio Desc</p>
               			<Link to="/characters/darth-sion"><button className="darksidebtn">View Bio</button></Link>
 					</div>
-					<div className="pb-10 text-center">
+					<div className="saberGlowLight pb-10 text-center">
 						{/* <GatsbyImage image={data.[image name].childImageSharp.gatsbyImageData} alt="[image alt]" /> */}
-            			<h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Col 2</h3>
-              			<p className="pb-7 text-lg mx-8">Darth Sion to go here with intro text and then to also have an image of him and once they have clicked on him it would take them to his individual page.</p>
+            			<h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Featured Weapon</h3>
+              			<p className="pb-7 text-lg mx-8">Short Bio Desc</p>
               			<Link to="/characters/darth-sion"><button className="darksidebtn">View Bio</button></Link>
 					</div>
-					<div className="pb-10 text-center">
+					<div className="saberGlowLight text-center pb-10">
 						{/* <GatsbyImage image={data.[image name].childImageSharp.gatsbyImageData} alt="[image alt]" /> */}
-            			<h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Col 3</h3>
-              			<p className="pb-7 text-lg mx-8">Darth Sion to go here with intro text and then to also have an image of him and once they have clicked on him it would take them to his individual page.</p>
+            			<h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Featured Planet</h3>
+              			<p className="pb-7 text-lg mx-8">Short Bio Desc</p>
+              			<Link to="/characters/darth-sion"><button className="darksidebtn">View Bio</button></Link>
+					</div>
+					<div className="saberGlowLight text-center pb-10">
+						{/* <GatsbyImage image={data.[image name].childImageSharp.gatsbyImageData} alt="[image alt]" /> */}
+            			<h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Featured Planet</h3>
+              			<p className="pb-7 text-lg mx-8">Short Bio Desc</p>
               			<Link to="/characters/darth-sion"><button className="darksidebtn">View Bio</button></Link>
 					</div>
 				</div>
