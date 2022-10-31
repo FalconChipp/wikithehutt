@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../../components/Layout";
 import { Link, graphql } from "gatsby";
-import { StaticImage, GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { Breadcrumb } from "gatsby-plugin-breadcrumb"
 
 export const Head = () => <title>Kylo Ren</title>
@@ -98,30 +98,10 @@ export default function KyloRen({data, location}) {
     );
 }
 
-export const ImageSettings = graphql `
-query kylo {
-    kylo: file(relativePath: {eq: "kylo-ren-bio.jpg"}) {
-      childImageSharp {
-        fluid {
-          base64
-          tracedSVG
-          srcWebp
-          srcSetWebp
-          originalImg
-          originalName
+export const Images = graphql `
+    query {
+        kyloren: file(relativePath: {eq: "kylo-ren-bio.jpg"}) {
+            ...ImageSettings
         }
-        gatsbyImageData(
-          placeholder: TRACED_SVG
-          tracedSVGOptions: {alphaMax: 1.5, blackOnWhite: true, optCurve: true, turdSize: 1.5}
-        )
-      }
-      childrenImageSharp {
-        fluid(
-          traceSVG: {turnPolicy: TURNPOLICY_WHITE, blackOnWhite: true, alphaMax: 1.5}
-        ) {
-          ...GatsbyImageSharpFluid
-        }
-      }
     }
-  }  
 `
