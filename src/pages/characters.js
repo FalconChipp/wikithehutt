@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { graphql, Link } from "gatsby";
 import { siteMetadata } from "../../gatsby-config";
 import { Breadcrumb } from "gatsby-plugin-breadcrumb";

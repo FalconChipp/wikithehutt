@@ -30,7 +30,10 @@ module.exports = {
       '3F084B': '#3F084B', 
       '230B36': '#230B36',
       '230B36ttt': '#h230B36 transparent transparent transparent', 
-      '220A39': '#220A39'
+      '220A39ttt': '#220A39 transparent transparent trasnparent',
+      '220A39': '#220A39',
+      '310943': '#310943',
+      '310943ttt' : '#310943 transparent transparent transparent'
     },
     fontFamily: {
       'dosis': ['"dosis"', '"sans-serif"'],
