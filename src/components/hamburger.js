@@ -1,5 +1,6 @@
-/* import React, { useState, useEffect } from "react"
+import React, { useState, useEffect } from "react"
 import styled, { createGlobalStyle } from "styled-components"
+
 
 const Global = createGlobalStyle`
   body {
@@ -24,10 +25,21 @@ const MenuIcon = styled.button`
   div {
     width: 1.5rem;
     height: 0.2rem;
-    background: black;
+    background: white;
     border-radius: 5px;
     transform origin: 1px;
     position: realtive;
+    transition: opacity 300ms, transform 300ms;
+
+    :first-child {
+      transform: ${({ nav }) => (nav ? "rotate(45deg)" : "rotate(0)")};
+    }
+    :nth-child(2) {
+      opacity: ${({ nav }) => (nav ? "0" : "1")};
+    }
+    :nth-child(3) {
+      transform: ${({ nav }) => (nav ? "rotate(-45deg)" : "rotate(0)")};
+    }
   }
 `
 
@@ -39,9 +51,12 @@ const MenuLinks = styled.nav`
    text-align: center;
    height: 100vh;
    width: 100%;
+   background: white;
    position: absolute;
    top: 0;
    right: 0;
+   width: 100%;
+   transition: transform 300ms;
    transform: ${({ nav }) => (nav ? "translateX(0)": "translateX(100%)")};
 
 
@@ -55,7 +70,7 @@ const MenuLinks = styled.nav`
 
    a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 1.5rem;
     transition: color 300ms;
 
@@ -65,13 +80,13 @@ const MenuLinks = styled.nav`
    }
 `
 
-const hamburger = () => {
-  const [nav, showNav] = useState(false)
+function Hamburger() {
+  const [nav, showNav] = useState(false);
 
     return (
         <div>
         <Global />
-        <MenuIcon onClick={() => showNav(!nav)}>
+        <MenuIcon nav={nav} onClick={() => showNav(!nav)}>
            <div />
            <div />
            <div />
@@ -102,4 +117,4 @@ const hamburger = () => {
     )
 }
 
-export default hamburger */
+export default Hamburger
