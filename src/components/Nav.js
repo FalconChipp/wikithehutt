@@ -5,7 +5,7 @@ import { breakpoints } from "../utils/breakpoints";
 
     export default function Navbar({ data }) {
         return (
-              <nav className="mt-[35px] bg-transparent mb-[35px] mobile:hidden">
+              <nav className="mt-[35px] bg-transparent mb-[35px]">
                   <div className="font-jedi grid grid-cols-7 text-3xl text-center text-white items-baseline">
                       <Link to="/"><StaticImage src="../images/Wiki-The-Hutt-Logo.png" width="250" alt="Logo" className="mt-[-20px]" placeholder="blurred"/></Link>
                       <Link className="m-5 pt-1 pb-2 px-3 hover:shadow-redSaber hover:text-redSaber rounded-xl" to="/">Home</Link>
