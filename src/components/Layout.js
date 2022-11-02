@@ -3,6 +3,7 @@ import Navbar from '../components/Nav'
 import Footer from '../components/Footer'
 import Header from "./Header";
 import NavbarMobile from "./NavMob";
+import Footernew from "./FooterNew";
 
 export default function Layout({ children }) {
     return (
@@ -13,7 +14,7 @@ export default function Layout({ children }) {
             <div className="content">
                 {children}
             </div>
-            <Footer />
+            <Footernew />
         </div>
         )
   }
