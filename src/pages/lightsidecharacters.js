@@ -1,10 +1,9 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import { graphql, Link } from "gatsby";
 import { siteMetadata } from "../../gatsby-config";
 import { Breadcrumb } from "gatsby-plugin-breadcrumb";
-
 
 export const Head = () => <title>{siteMetadata.title} - {siteMetadata.lightsidechars.title}</title>
 export default function Characters({ data, location }) {
@@ -32,7 +31,7 @@ export default function Characters({ data, location }) {
               <Link to="/characters/chewbacca"><button className="btn">View Bio</button></Link>
             </div>
             <div className="saberGlowLight text-center pb-10">
-              <GatsbyImage image={data.obiwan.childImageSharp.gatsbyImageData} alt="Obi-Wan Kenobi" />
+              <GatsbyImage image={data.obiwan.childImageSharp.gatsbyImageData} alt="Obi-Wan Kenobi, Hello there" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">0bi-Wan Kenobi</h3>
               <p className="pb-7 text-lg mx-8">Obi-Wan Kenobi to go here with intro text and then to also have an image of him and once they have clicked on him it would take them to his individual page.</p>
               <Link to="/characters/obi-wan-kenobi"><button className="btn">View Bio</button></Link>
@@ -56,7 +55,7 @@ export default function Characters({ data, location }) {
         <section>
           <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
             <div className="saberGlowLight text-center pb-10">
-              <GatsbyImage image={data.grogu.childImageSharp.gatsbyImageData} alt="Grogu - just the cuest really" />
+              <GatsbyImage image={data.grogu.childImageSharp.gatsbyImageData} alt="Grogu - just the cutest really" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Grogu</h3>
               <p className="pb-7 text-lg mx-8">Grogu to go here with intro text and then to also have an image of him and once they have clicked on him it would take them to his individual page.</p>
               <Link to="/characters/grogu"><button className="btn">View Bio</button></Link>
@@ -201,7 +200,7 @@ export default function Characters({ data, location }) {
         <section>
           <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
             <div className="saberGlowLight text-center pb-10">
-              <GatsbyImage image={data.c3po.childImageSharp.gatsbyImageData} alt="C3P0" />
+              <GatsbyImage image={data.c3po.childImageSharp.gatsbyImageData} alt="I am C3P0, human cybord relations" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">C3P0</h3>
               <p className="pb-7 text-lg mx-8">C3P0 to go here with intro text and then to also have an image of him and once they have clicked on him it would take them to his individual page.</p>
               <Link to="/characters/c3po"><button className="btn">View Bio</button></Link>
@@ -257,7 +256,6 @@ fragment ImageSettings on File {
       )
     }
   }
-
 `
 
 export const Images = graphql `

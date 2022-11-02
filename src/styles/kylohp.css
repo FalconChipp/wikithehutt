@@ -115,34 +115,23 @@
 	transform-origin: left bottom;
 }
 .layers-trees-2 .tree-1 .i-first::after {
-	@apply absolute right-0 top-1 w-0 h-0 border-solid;
+	@apply absolute right-0 top-1 w-0 h-0 border-solid border-220A39ttt;
 	border-width: 10px 28px 0 0;
-	border-color: #220A39 transparent transparent transparent;
 }
 .layers-trees-2 .tree-1 .i-second {
-	position: absolute;
-	left: 28px;
-	bottom: 240px;
-	width: 16px;
-	height: 4px;
-	background: #310943;
+	@apply absolute left-[28px] bottom-[240px] w-[16px] h-[4px] bg-310943;
 	-webkit-transform: rotate(-20deg) skew(30deg, -10deg);
 	transform: rotate(-20deg) skew(30deg, -10deg);
 	-webkit-transform-origin: left bottom;
 	transform-origin: left bottom;
 }
 .layers-trees-2 .tree-1 .i-second::after {
+	@apply absolute right-0 top-1 w-0 h-0 border-solid border-310943ttt; 
 	content: '';
-	position: absolute;
-	right: 0;
-	top: 4px;
-	width: 0;
-	height: 0;
-	border-style: solid;
 	border-width: 10px 28px 0 0;
-	border-color: #310943 transparent transparent transparent;
 }
 .layers-trees-2 .tree-2 {
+
 	position: absolute;
 	left: 110px;
 	bottom: 0;

@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../../components/Layout";
 import { Link, graphql } from "gatsby";
-import { StaticImage, GatsbyImage } from "gatsby-plugin-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 import { Breadcrumb } from "gatsby-plugin-breadcrumb"; 
 
 export const Head = () => <title>First Order Executioner</title>
@@ -13,7 +13,7 @@ export default function FirstOrderExec({data, location}) {
                 <h1 className="text-white text-center font-jedi text-6xl pt-5 pb-10">First Order Executioner</h1>
                 <div className="grid grid-cols-2 gap-5 container-center">
                     <div>
-                        {/*<GatsbyImage image={data.kylo.childImageSharp.gatsbyImageData} alt="Kylo Ren"/>*/}
+                        <GatsbyImage image={data.firstorderex.childImageSharp.gatsbyImageData} alt="first order ex"/>
                     </div>
                     <div className="align-center">
                         <h3 className="text-white font-dosis text-4xl">Alignment: </h3>
@@ -98,30 +98,10 @@ export default function FirstOrderExec({data, location}) {
     );
 }
 
-export const ImageSettings = graphql `
-query kylo {
-    kylo: file(relativePath: {eq: "kylo-ren-bio.jpg"}) {
-      childImageSharp {
-        fluid {
-          base64
-          tracedSVG
-          srcWebp
-          srcSetWebp
-          originalImg
-          originalName
+export const Images = graphql `
+    query {
+        firstorderex: file(relativePath: {eq: "first-order-ex-bio.png"}) {
+            ...ImageSettings
         }
-        gatsbyImageData(
-          placeholder: TRACED_SVG
-          tracedSVGOptions: {alphaMax: 1.5, blackOnWhite: true, optCurve: true, turdSize: 1.5}
-        )
-      }
-      childrenImageSharp {
-        fluid(
-          traceSVG: {turnPolicy: TURNPOLICY_WHITE, blackOnWhite: true, alphaMax: 1.5}
-        ) {
-          ...GatsbyImageSharpFluid
-        }
-      }
     }
-  }  
 `
