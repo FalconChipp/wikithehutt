@@ -27,7 +27,7 @@ const MenuIcon = styled.button`
     height: 0.2rem;
     background: white;
     border-radius: 5px;
-    transform origin: 1px;
+    transform-origin: 1px;
     position: realtive;
     transition: opacity 300ms, transform 300ms;
 
@@ -94,22 +94,22 @@ function Hamburger() {
         <MenuLinks nav={nav}>
          <ul>
             <li>
-             <a href="#">Home</a>
+             <a href="/">Home</a>
             </li>
             <li>
-             <a href="#">Characters</a>
+             <a href="characters">Characters</a>
             </li>
             <li>
-             <a href="#">Weapons</a>
+             <a href="weapons">Weapons</a>
             </li>
             <li>
-             <a href="#">Ships</a>
+             <a href="ships">Ships</a>
             </li>
             <li>
-             <a href="#">Planets</a>
+             <a href="planets">Planets</a>
             </li>
             <li>
-             <a href="#">Timeline</a>
+             <a href="timeline">Timeline</a>
             </li>
         </ul> 
         </MenuLinks>
