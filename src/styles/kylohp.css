@@ -131,76 +131,43 @@
 	border-width: 10px 28px 0 0;
 }
 .layers-trees-2 .tree-2 {
-
-	position: absolute;
-	left: 110px;
-	bottom: 0;
-	width: 60px;
-	height: 100%;
-	background: #471665;
+	@apply absolute left-[110px] bottom-0 w-[60px] bg-471165 h-full;
 	background-image: linear-gradient(1deg, #590961 9%, #471665 45%, #2D1248 96%);
 }
-.layers-trees-2 .tree-2 .dark-bg .i-first,
-.layers-trees-2 .tree-2 .dark-bg .i-second {
-	background: #230B36;
-}
+.layers-trees-2 .tree-2 .dark-bg .i-first, .layers-trees-2 .tree-2 .dark-bg .i-second { @apply bg-230B36 }
 .layers-trees-2 .tree-2 .dark-bg .i-first::after,
 .layers-trees-2 .tree-2 .dark-bg .i-second::after {
 	border-color: #230B36 transparent transparent transparent;
 }
+
 .layers-trees-2 .tree-2 .i-first {
-	position: absolute;
-	left: 48px;
-	bottom: 400px;
-	width: 52px;
-	height: 8px;
-	background: #3A1559;
+	@apply absolute left-[40px] bottom-[400px] w-[52px] h-[8px] bg-3A1559;
 	-webkit-transform: rotate(-20deg) skew(30deg, -8deg);
 	transform: rotate(-20deg) skew(30deg, -8deg);
 	-webkit-transform-origin: left bottom;
 	transform-origin: left bottom;
 }
 .layers-trees-2 .tree-2 .i-first::after {
+	@apply absolute right-0 top-2 w-0 h-0 border-solid;
 	content: '';
-	position: absolute;
-	right: 0;
-	top: 8px;
-	width: 0;
-	height: 0;
-	border-style: solid;
 	border-width: 14px 52px 0 0;
 	border-color: #3A1559 transparent transparent transparent;
 }
 .layers-trees-2 .tree-2 .i-second {
-	position: absolute;
-	left: 58px;
-	bottom: 300px;
-	width: 24px;
-	height: 6px;
-	background: #41155F;
+	@apply absolute left-[58px] bottom-[300px] w-6 h-[6px] bg-41155F;
 	-webkit-transform: rotate(-20deg) skew(30deg, -10deg);
 	transform: rotate(-20deg) skew(30deg, -10deg);
 	-webkit-transform-origin: left bottom;
 	transform-origin: left bottom;
 }
 .layers-trees-2 .tree-2 .i-second::after {
+	@apply absolute right-0 top-[6px] w-0 h-0 border-solid;
 	content: '';
-	position: absolute;
-	right: 0;
-	top: 6px;
-	width: 0;
-	height: 0;
-	border-style: solid;
 	border-width: 10px 34px 0 0;
 	border-color: #41155F transparent transparent transparent;
 }
 .layers-trees-2 .tree-3 {
-	position: absolute;
-	left: 254px;
-	bottom: 0;
-	width: 40px;
-	height: 100%;
-	background: #451663;
+	@apply absolute left-[254px] bottom-0 w-10 h-full bg-451663; 
 	background-image: linear-gradient(to top, #711263 0%, #451663 47%, #1B0B35 95%);
 }
 .layers-trees-2 .tree-3 .dark-bg .i-first {
@@ -216,35 +183,20 @@
 	border-color: transparent #230B36 transparent transparent;
 }
 .layers-trees-2 .tree-3 .i-first {
-	position: absolute;
-	left: 38px;
-	bottom: 460px;
-	width: 20px;
-	height: 4px;
-	background: #260E41;
+	@apply absolute left-[38px] bottom-[480px] w-5 h-1 bg-260E41;
 	-webkit-transform: rotate(-20deg) skew(30deg, -10deg);
 	transform: rotate(-20deg) skew(30deg, -10deg);
 	-webkit-transform-origin: left bottom;
 	transform-origin: left bottom;
 }
 .layers-trees-2 .tree-3 .i-first::after {
+	@apply absolute right-0 top-1 w-0 h-0 border-solid; 
 	content: '';
-	position: absolute;
-	right: 0;
-	top: 4px;
-	width: 0;
-	height: 0;
-	border-style: solid;
 	border-width: 10px 28px 0 0;
 	border-color: #260E41 transparent transparent transparent;
 }
 .layers-trees-2 .tree-3 .i-second {
-	position: absolute;
-	right: 38px;
-	bottom: 380px;
-	width: 20px;
-	height: 6px;
-	background: #33114F;
+	@apply absolute right-[38px] bottom-[380px] w-5 h-[6px] bg-33114F; 
 	-webkit-transform: rotate(20deg) skew(-30deg, 20deg);
 	transform: rotate(20deg) skew(-30deg, 20deg);
 	-webkit-transform-origin: right bottom;
