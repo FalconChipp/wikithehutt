@@ -4,7 +4,6 @@ import { GatsbyImage, StaticImage } from "gatsby-plugin-image";
 import { breakpoints } from "../utils/breakpoints";
 
     export default function Navbar({ data }) {
-
         return (
               <nav className="mt-[35px] bg-transparent mb-[35px]">
     
