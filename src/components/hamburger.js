@@ -53,7 +53,7 @@ const MenuLinks = styled.nav`
    height: 100vh;
    width: 100%;
    background: white;
-   position: absolute;
+   position: fixed;
    top: 0;
    right: 0;
    width: 100%;
@@ -95,22 +95,22 @@ function Hamburger() {
         <MenuLinks nav={nav}>
          <ul>
             <li>
-             <a href="/">Home</a>
+             <div className="font-jedi" a href="/">Home</div>
             </li>
             <li>
-             <a href="characters">Characters</a>
+             <div className="font-jedi" a href="characters">Characters</div>
             </li>
             <li>
-             <a href="weapons">Weapons</a>
+             <div className="font-jedi" href="weapons">Weapons</div>
             </li>
             <li>
-             <a href="ships">Ships</a>
+             <div className="font-jedi" a href="ships">Ships</div>
             </li>
             <li>
-             <a href="planets">Planets</a>
+             <div className="font-jedi" a href="planets">Planets</div>
             </li>
             <li>
-             <a href="timeline">Timeline</a>
+             <div className="font-jedi" a href="timeline">Timeline</div>
             </li>
         </ul> 
         </MenuLinks>
