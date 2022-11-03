@@ -44,6 +44,7 @@ module.exports = {
       '451663' : '#451663',
       '260E41' : '#260E41',
       '33114F' : '#33114F',
+      '271145' : '271145',
     },
     fontFamily: {
       'dosis': ['"dosis"', '"sans-serif"'],
@@ -94,6 +95,10 @@ module.exports = {
         'weapons': "url('../../static/images/weapons.png')",
         'xwing': "url('../../static/images/xwing.jpg')",
         'planet': "url('../../static/images/planet.jpg')",
+      },
+
+      content: {
+        'blank': '',
       },
     },
   },

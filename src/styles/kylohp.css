@@ -203,23 +203,12 @@
 	transform-origin: right bottom;
 }
 .layers-trees-2 .tree-3 .i-second::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 6px;
-	width: 0;
-	height: 0;
-	border-style: solid;
+	@apply absolute left-0 top-[6px] w-0 h-0 border-solid content-blank; 
 	border-width: 0 30px 12px 0;
 	border-color: transparent #33114F transparent transparent;
 }
 .layers-trees-2 .tree-4 {
-	position: absolute;
-	left: 456px;
-	bottom: 0;
-	width: 60px;
-	height: 100%;
-	background: #271145;
+	@apply absolute left-[456px] bottom-0 w-[60px] h-full bg-271145; 
 	background-image: linear-gradient(to top, #511164 0%, #271145 88%);
 }
 .layers-trees-2 .tree-4 .dark-bg .i-first,
