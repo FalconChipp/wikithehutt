@@ -13,20 +13,20 @@ export default function Home() {
     return (
       <Layout>
 			<section>
-				<div className="grid grid-cols-3">
+				<div className="grid tabletLand:grid-cols-1 laptop:grid-cols-3">
 					<div className="text-white">
-						<h2 className="font-dosis text-5xl text-center pt-[50%]">Welcome to The <br></br>Jedi Archives</h2>
+						<h2 className="font-dosis text-5xl text-center mx-[10%] laptop:pt-[50%]">Welcome to The Jedi Archives</h2>
 					</div>
 					<div className="max-h-[835px]"><KyloAni /></div>
 					<div className="text-white">
-						<h2 className="font-dosis text-5xl text-center pt-[50%]">A Full Wikipedia for Star Wars Nerds</h2>
+						<h2 className="font-dosis text-5xl text-center mx-[10%] laptop:pt-[50%]">A Full Wikipedia for Star Wars Nerds</h2>
 					</div>
 				</div>
 			</section>
 
 			<section>
 				<h2 className="font-dosis text-3xl text-center text-white">Featured Bios</h2>
-				<div className="grid grid-cols-4 gap-5 pb-5 container-center px-8">
+				<div className="grid mobile:grid-cols-1 tabletLand:grid-cols-2 laptop:grid-cols-4 gap-5 pb-5 px-8">
 					<div className="saberGlowLight pb-10 text-center" >
 						{/* <GatsbyImage image={data.[image name].childImageSharp.gatsbyImageData} alt="[image alt]" /> */}
             			<h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Featured Character</h3>

@@ -44,7 +44,8 @@ const MenuIcon = styled.button`
 `
 
 const MenuLinks = styled.nav`
-   display: fixed;
+   z-index: 4;
+   display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
