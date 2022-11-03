@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import styled, { createGlobalStyle } from "styled-components"
+import { Link } from "gatsby"
 
 
 const Global = createGlobalStyle`
@@ -93,24 +94,24 @@ function Hamburger() {
            <div />
         </MenuIcon>
         <MenuLinks nav={nav}>
-         <ul>
+         <ul className="font-jedi">
             <li>
-             <div className="font-jedi" a href="/">Home</div>
+             <Link to="/">Home</Link>
             </li>
             <li>
-             <div className="font-jedi" a href="characters">Characters</div>
+            <Link to="characters">Characters</Link>
             </li>
             <li>
-             <div className="font-jedi" href="weapons">Weapons</div>
+            <Link to="weapons">Weapons</Link>
             </li>
             <li>
-             <div className="font-jedi" a href="ships">Ships</div>
+            <Link to="ships">Ships</Link>
             </li>
             <li>
-             <div className="font-jedi" a href="planets">Planets</div>
+            <Link to="planets">Planets</Link>
             </li>
             <li>
-             <div className="font-jedi" a href="timeline">Timeline</div>
+            <Link to="timeline">Timeline</Link>
             </li>
         </ul> 
         </MenuLinks>
