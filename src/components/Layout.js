@@ -1,7 +1,9 @@
 import React from "react";
 import Navbar from '../components/Nav'
+import Footer from '../components/Footer'
 import Header from "./Header";
 import Hamburger from "./hamburger";
+import NavbarMobile from "./NavMob";
 import Footernew from "./FooterNew";
 
 export default function Layout({ children }) {
@@ -13,7 +15,7 @@ export default function Layout({ children }) {
             <div className="content">
                 {children}
             </div>
-            <Footernew />
+            <Footer />
         </div>
         )
   }
