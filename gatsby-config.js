@@ -44,6 +44,7 @@
         path: `${__dirname}/src/images`,
       },
     },
+      `gatsby-plugin-next-seo`,
       `gatsby-plugin-styled-components`,
       `gatsby-plugin-image`,
       `gatsby-plugin-sharp`,
