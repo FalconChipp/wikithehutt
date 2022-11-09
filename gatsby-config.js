@@ -34,7 +34,20 @@
         planets: {
           title: `Planets`,
           description: `#`
-        }
+        },
+
+        // keywords: {
+        //   home: {
+        //     keyword1: `star wars`,
+        //     keyword2: `wiki`, 
+        //   }, 
+
+        //   characters: {
+        //     keyword1: `characters`,
+        //     keyword2: `dark side`, 
+        //     keyword3: `light side`,
+        //   }
+        // }
     },
   plugins: [
     {
@@ -44,6 +57,7 @@
         path: `${__dirname}/src/images`,
       },
     },
+      `gatsby-plugin-next-seo`,
       `gatsby-plugin-styled-components`,
       `gatsby-plugin-image`,
       `gatsby-plugin-sharp`,

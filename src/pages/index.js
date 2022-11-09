@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import "../styles/kylohp.css"; 
-import "../styles/keyframes.css"
+import "../styles/keyframes.css";
 import KyloAni from "../components/KyloAnimation";
 import { siteMetadata } from "../../gatsby-config";
 import { Link, graphql } from "gatsby";
@@ -12,6 +12,7 @@ export const Head = () => <title>{siteMetadata.title}</title>
 export default function Home() {
     return (
       <Layout>
+		{/* <SEO /> */}
 			<section>
 				<div className="grid tabletLand:grid-cols-1 laptop:grid-cols-3">
 					<div className="text-white">
