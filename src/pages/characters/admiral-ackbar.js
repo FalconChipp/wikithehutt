@@ -100,7 +100,7 @@ export default function AdmiralAckbar({data, location}) {
 
 export const Images = graphql `
     query {
-        admiralackbar: file(relativePath: {eq: "admiral-ackbar-bio.jpg"}) {
+        admiralackbar: file(relativePath: {eq: "admiral-ackbar-bio.png"}) {
             ...ImageSettings
         }
     }

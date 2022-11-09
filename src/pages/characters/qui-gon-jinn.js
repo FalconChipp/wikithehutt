@@ -100,7 +100,7 @@ export default function QuiGonJinn({data, location}) {
 
 export const Images = graphql `
     query {
-        quigon: file(relativePath: {eq: "gui-kon-bio.jpg"}) {
+        quigon: file(relativePath: {eq: "qui-gon-bio.jpg"}) {
             ...ImageSettings
         }
     }

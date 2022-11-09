@@ -13,7 +13,7 @@ export default function KyloRen({data, location}) {
                 <h1 className="text-white text-center font-jedi text-6xl pt-5 pb-10">Kylo Ren (Ben Solo)</h1>
                 <div className="grid grid-cols-2 gap-5 container-center">
                     <div>
-                        <GatsbyImage image={data.kylo.childImageSharp.gatsbyImageData} alt="Kylo Ren"/>
+                        <GatsbyImage image={data.kyloren.childImageSharp.gatsbyImageData} alt="Kylo Ren"/>
                     </div>
                     <div className="align-center">
                         <h3 className="text-white font-dosis text-4xl">Alignment: </h3>

@@ -53,7 +53,7 @@ const MenuLinks = styled.nav`
    text-align: center;
    height: 100vh;
    width: 100%;
-   background: white;
+   background: black;
    position: fixed;
    top: 0;
    right: 0;
@@ -72,7 +72,7 @@ const MenuLinks = styled.nav`
 
    a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 1.5rem;
     transition: color 300ms;
 
