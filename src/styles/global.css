@@ -7,7 +7,7 @@
     src: url("../fonts/Starjedi.ttf");
 }
 html {
-    @apply bg-site bg-contain bg-repeat-y;
+    @apply w-full bg-site bg-contain bg-repeat-y;
 }
 .bg-brand {
     @apply bg-cover bg-no-repeat bg-top;
