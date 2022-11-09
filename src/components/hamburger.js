@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import styled, { createGlobalStyle } from "styled-components"
 import { Link } from "gatsby"
+import { StaticImage } from "gatsby-plugin-image"
 
 
 const Global = createGlobalStyle`
@@ -88,6 +89,7 @@ function Hamburger() {
     return (
         <div>
         <Global />
+        <Link to="/"><StaticImage src="../images/Wiki-The-Hutt-Logo.png" width="250" alt="Logo" className="mt-[-20px]" placeholder="blurred"/></Link>
         <MenuIcon nav={nav} onClick={() => showNav(!nav)}>
            <div />
            <div />
@@ -99,19 +101,19 @@ function Hamburger() {
              <Link to="/">Home</Link>
             </li>
             <li>
-            <Link to="characters">Characters</Link>
+            <Link to="/characters">Characters</Link>
             </li>
             <li>
-            <Link to="weapons">Weapons</Link>
+            <Link to="/weapons">Weapons</Link>
             </li>
             <li>
-            <Link to="ships">Ships</Link>
+            <Link to="/ships">Ships</Link>
             </li>
             <li>
-            <Link to="planets">Planets</Link>
+            <Link to="/planets">Planets</Link>
             </li>
             <li>
-            <Link to="timeline">Timeline</Link>
+            <Link to="/timeline">Timeline</Link>
             </li>
         </ul> 
         </MenuLinks>

@@ -5,7 +5,7 @@ import Hamburger from "./hamburger";
 
     export default function Navbar({ data }) {
         return (
-              <nav className="mt-[35px] bg-transparent mb-[35px]">
+              <nav className="pt-5 bg-transparent mb-[35px] py-3">
                   <div className="font-jedi text-center text-white hidden items-baseline laptop:grid laptop:grid-cols-7 laptop:text-2xl min-[1700px]:text-3xl">
                       <Link to="/"><StaticImage src="../images/Wiki-The-Hutt-Logo.png" width="250" alt="Logo" className="mt-[-20px]" placeholder="blurred"/></Link>
                       <Link className="pt-1 pb-2 px-3 hover:shadow-redSaber hover:text-redSaber rounded-xl" to="/">Home</Link>
