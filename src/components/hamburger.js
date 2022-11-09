@@ -89,7 +89,7 @@ function Hamburger() {
     return (
         <div>
         <Global />
-        <Link to="/"><StaticImage src="../images/Wiki-The-Hutt-Logo.png" width="250" alt="Logo" className="mt-[-20px]" placeholder="blurred"/></Link>
+        <Link to="/"><StaticImage src="../images/Wiki-The-Hutt-Logo.png" width="200" alt="Logo" className="mt-[-20px] content-center" placeholder="blurred"/></Link>
         <MenuIcon nav={nav} onClick={() => showNav(!nav)}>
            <div />
            <div />

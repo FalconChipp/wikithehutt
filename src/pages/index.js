@@ -14,13 +14,13 @@ export default function Home() {
       <Layout>
 		{/* <SEO /> */}
 			<section>
-				<div className="grid tabletLand:grid-cols-1 laptop:grid-cols-3">
+				<div className="grid mobile:grid-cols-1 tabletLand:grid-cols-1 laptop:grid-cols-3">
 					<div className="text-white">
-						<h2 className="font-dosis text-5xl text-center mx-[10%] laptop:pt-[50%]">Welcome to The Jedi Archives</h2>
+						<h2 className="font-dosis mobile:text-3xl text-5xl text-center mx-[10%] laptop:pt-[50%]">Welcome to The Jedi Archives</h2>
 					</div>
-					<div className="max-h-[835px]"><KyloAni /></div>
+					<div className="mobile:max-w-[375px] mobile:mt-5 mobile:max-h-[250px] laptop:max-h-[835px]"><KyloAni /></div>
 					<div className="text-white">
-						<h2 className="font-dosis text-5xl text-center mx-[10%] laptop:pt-[50%]">A Full Wikipedia for Star Wars Nerds</h2>
+						<h2 className="font-dosis mobile:text-3xl text-5xl text-center mx-[10%] mobile:pt-[10%] laptop:pt-[50%]">A Full Wikipedia for Star Wars Nerds</h2>
 					</div>
 				</div>
 			</section>
