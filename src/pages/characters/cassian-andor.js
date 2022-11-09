@@ -13,7 +13,7 @@ export default function CassianAndor({data, location}) {
                 <h1 className="text-white text-center font-jedi text-6xl pt-5 pb-10">Cassian Andor</h1>
                 <div className="grid grid-cols-2 gap-5 container-center">
                     <div>
-                        {/* <GatsbyImage image={data.cassianandor.childImageSharp.gatsbyImageData} alt="cassian"/> */}
+                        <GatsbyImage image={data.cassianandor.childImageSharp.gatsbyImageData} alt="cassian"/>
                     </div>
                     <div className="align-center">
                         <h3 className="text-white font-dosis text-4xl">Alignment: </h3>
@@ -100,7 +100,7 @@ export default function CassianAndor({data, location}) {
 
 export const Images = graphql `
     query {
-        cassianandor: file(relativePath: {eq: "cassian-andpr-bio.jpg"}) {
+        cassianandor: file(relativePath: {eq: "cassian-andor-bio.jpg"}) {
             ...ImageSettings
         }
     }
