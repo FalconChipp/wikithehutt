@@ -100,7 +100,7 @@ export default function CassianAndor({data, location}) {
 
 export const Images = graphql `
     query {
-        cassianandor: file(relativePath: {eq: "cassian-andpr-bio.jpg"}) {
+        cassianandor: file(relativePath: {eq: "cassian-andor-bio.jpg"}) {
             ...ImageSettings
         }
     }
