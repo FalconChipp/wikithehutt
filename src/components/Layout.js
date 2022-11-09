@@ -1,21 +1,20 @@
 import React from "react";
-import Navbar from '../components/Nav'
-import Footer from '../components/Footer'
 import Header from "./Header";
-import Hamburger from "./hamburger";
-import NavbarMobile from "./NavMob";
 import Footernew from "./FooterNew";
+import Navbar from "./Nav";
+import Hamburger from "./hamburger";
 
 export default function Layout({ children }) {
     return (
         <div className="layout">
             <Header />
             <Navbar />
-            <Hamburger />
+            {/* <DesktopNavMenu/>
+            <MobileNavMenu /> */}
             <div className="content">
                 {children}
             </div>
-            <Footer />
+            <FooterNew/>
         </div>
         )
   }

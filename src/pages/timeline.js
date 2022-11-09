@@ -8,7 +8,7 @@ export default function Timeline() {
     return (
       <Layout>
       <section>
-        <div>Timeline</div>
+        <div>Demo 3</div>
       </section>
     </Layout>
     )
