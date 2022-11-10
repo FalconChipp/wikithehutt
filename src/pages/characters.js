@@ -30,14 +30,26 @@ export default function Characters({ data, location="" }) {
             <GatsbyImage image={data.lightside.childImageSharp.gatsbyImageData} alt="Light Side Logo" />
             <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Light Side Chracters</h3>
               <p className="pb-7">Take a look at all the the light side characters that are involved within the Star Wars franchise with individual bios!</p>
-              <Link to="/lightsidecharacters"><button className="btn">View Characters</button></Link>
+              <Link className="buttonCool text-white" to="/lightsidecharacters">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                See All 
+              </Link>
             </div>
 
             <div className="border border-solid border-redSaber text-center pb-10">
             <GatsbyImage image={data.darkside.childImageSharp.gatsbyImageData} alt="Dark Side Logo" />
             <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Dark Side Characters</h3>
               <p className="pb-7">Take a look at all the the dark side characters that are involved within the Star Wars franchise with individual bios!</p>
-              <Link to="/darksidecharacters"><button className="darksidebtn">View Characters</button></Link>
+              <Link className="buttonCoolRed text-white" to="/darksidecharacters">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                See All
+            </Link>
             </div>
           </div>
         </section>
