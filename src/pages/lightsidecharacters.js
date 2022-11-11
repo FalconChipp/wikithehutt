@@ -23,7 +23,7 @@ export default function Characters({ data, location }) {
         </section>
         
         <section>
-          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-4 pt-7 container-center px-8">
+          <div className="grid mobile:grid-cols-1 tabletLand:grid-cols-4 laptop:grid-cols-4 gap-5 pb-4 pt-7 container-center mobile:max-w-[675px]:px-[10%] ">
             <div className="saberGlowLight text-center pb-10">
               <GatsbyImage image={data.chewbacca.childImageSharp.gatsbyImageData} alt="Chewbacca" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Chewbacca</h3>
@@ -53,7 +53,7 @@ export default function Characters({ data, location }) {
         </div>
 
         <section>
-          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center mobile:max-w-[675px]:px-[10%]">
             <div className="saberGlowLight text-center pb-10">
               <GatsbyImage image={data.grogu.childImageSharp.gatsbyImageData} alt="Grogu - just the cutest really" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Grogu</h3>
@@ -82,7 +82,7 @@ export default function Characters({ data, location }) {
         </section>
 
         <section>
-          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8 ">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center mobile:max-w-[675px]:px-[10%] ">
             <div className="saberGlowLight text-center pb-10">
               <GatsbyImage image={data.anakinskywalker.childImageSharp.gatsbyImageData} alt="Anakin Skywalker" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Anakin Skywalker</h3>
@@ -111,7 +111,7 @@ export default function Characters({ data, location }) {
         </section>
 
         <section>
-          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center mobile:max-w-[675px]:px-[10%]">
             <div className="saberGlowLight text-center pb-10">
               <GatsbyImage image={data.hansolo.childImageSharp.gatsbyImageData} alt="Han Solo" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Han Solo</h3>
@@ -131,8 +131,8 @@ export default function Characters({ data, location }) {
               <Link to="/characters/lando-calrissian"><button className="btn">View Bio</button></Link>
             </div>
             <div className="saberGlowLight text-center pb-10">
-            <GatsbyImage image={data.mando.childImageSharp.gatsbyImageData} alt="The Mandalorian" />
-            <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">The Mandalorian</h3>
+            <GatsbyImage image={data.din.childImageSharp.gatsbyImageData} alt="The Mandalorian" />
+            <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Din Djarin</h3>
               <p className="pb-7 text-lg mx-8">The Mandalorian to go here with intro text and then to also have an image of him and once they have clicked on him it would take them to his individual page.</p>
               <Link to="/characters/mandalorian"><button className="btn">View Bio</button></Link>
             </div>
@@ -140,7 +140,7 @@ export default function Characters({ data, location }) {
         </section>
 
         <section>
-          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center mobile:max-w-[675px]:px-[10%]">
             <div className="saberGlowLight text-center pb-10">
               <GatsbyImage image={data.rey.childImageSharp.gatsbyImageData} alt="Rey" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Rey</h3>
@@ -169,7 +169,7 @@ export default function Characters({ data, location }) {
         </section>
 
         <section>
-          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center mobile:max-w-[675px]:px-[10%]">
             <div className="saberGlowLight text-center pb-10">
               <GatsbyImage image={data.bokatan.childImageSharp.gatsbyImageData} alt="Bo-Katan Kryze" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Bo-Katan Kryze</h3>
@@ -198,7 +198,7 @@ export default function Characters({ data, location }) {
         </section>
 
         <section>
-          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center mobile:max-w-[675px]:px-[10%]">
             <div className="saberGlowLight text-center pb-10">
               <GatsbyImage image={data.c3po.childImageSharp.gatsbyImageData} alt="I am C3P0, human cybord relations" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">C3P0</h3>
@@ -206,7 +206,7 @@ export default function Characters({ data, location }) {
               <Link to="/characters/c3po"><button className="btn">View Bio</button></Link>
             </div>
             <div className="saberGlowLight text-center pb-10">
-              <GatsbyImage image={data.r2d2.childImageSharp.gatsbyImageData} alt="R2-D2" />
+              <GatsbyImage image={data.artoo.childImageSharp.gatsbyImageData} alt="R2-D2" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">R2-D2</h3>
               <p className="pb-7 text-lg mx-8">R2-D2 to go here with intro text and then to also have an image of him and once they have clicked on him it would take them to his individual page.</p>
               <Link to="/characters/r2d2"><button className="btn">View Bio</button></Link>
@@ -227,7 +227,7 @@ export default function Characters({ data, location }) {
         </section>
 
         <section>
-          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center px-8">
+          <div className="grid grid-cols-4 sm:grid-cols-2 md:grid-cols-4 gap-5 pb-5 container-center mobile:max-w-[675px]:px-[10%]">
             <div className="saberGlowLight text-center pb-10">
             <GatsbyImage image={data.captainrex.childImageSharp.gatsbyImageData} alt="Captain Rex - Whose a good boy" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">Captain Rex</h3>
@@ -246,109 +246,186 @@ export default function Characters({ data, location }) {
     )
   }
 
-export const ImageSettings = graphql `
-fragment ImageSettings on File {
-    childImageSharp {
-      gatsbyImageData(
-        layout: FULL_WIDTH
-        placeholder: BLURRED
-        formats: [AUTO]
-      )
-    }
-  }
-`
-
-export const Images = graphql `
+export const LightSideImgs = graphql `
   query {
     chewbacca: file(relativePath: {eq: "chewbacca-bio.jpg"}) {
-      ...ImageSettings
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+      }
     }
+
     obiwan: file(relativePath: {eq: "obi-wan-bio1.jpg"}) {
-      ...ImageSettings
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+      }
     }
+
     yoda: file(relativePath: {eq: "yoda-bio.jpg"}) {
-        ...ImageSettings
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      lukeskywalker: file(relativePath: {eq: "luke-skywalker-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    lukeskywalker: file(relativePath: {eq: "luke-skywalker-bio.jpg"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      grogu: file(relativePath: {eq: "grogu-4k.jpg"}) {
-        ...ImageSettings
+    }
+
+    grogu: file(relativePath: {eq: "grogu-4k.jpg"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      aayla: file(relativePath: {eq: "aayla-secura-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    aayla: file(relativePath: {eq: "aayla-secura-bio.jpg"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      ahsoka: file(relativePath: {eq: "ahsoka-tano-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    ahsoka: file(relativePath: {eq: "ahsoka-tano-bio.jpg"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      admiralackbar: file(relativePath: {eq: "admiral-ackbar-bio.png"}) {
-        ...ImageSettings
+    }
+
+    admiralackbar: file(relativePath: {eq: "admiral-ackbar-bio.png"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      anakinskywalker: file(relativePath: {eq: "anakin-skywalker-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    anakinskywalker: file(relativePath: {eq: "anakin-skywalker-bio.jpg"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      sexypadme: file(relativePath: {eq: "sexy-padme-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    sexypadme: file(relativePath: {eq: "sexy-padme-bio.jpg"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      macewindu: file(relativePath: {eq: "mace-windu-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    macewindu: file(relativePath: {eq: "mace-windu-bio.jpg"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      quigon: file(relativePath: {eq: "qui-gon-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    quigon: file(relativePath: {eq: "qui-gon-bio.jpg"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      hansolo: file(relativePath: {eq: "han-solo-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    hansolo: file(relativePath: {eq: "han-solo-bio.jpg"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      leia: file(relativePath: {eq: "leia-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    leia: file(relativePath: {eq: "leia-bio.jpg"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      lando: file(relativePath: {eq: "lando-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    lando: file(relativePath: {eq: "lando-bio.jpg"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      mando: file(relativePath: {eq: "the-mando-bio.png"}) {
-        ...ImageSettings
+    }
+
+    din: file(relativePath: {eq: "din-bio.png"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      rey: file(relativePath: {eq: "rey-bio.png"}) {
-        ...ImageSettings
+    }
+
+    rey: file(relativePath: {eq: "rey-bio.png"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      finn: file(relativePath: {eq: "finn-bio.png"}) {
-        ...ImageSettings
+    }
+
+    finn: file(relativePath: {eq: "finn-bio.png"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      poenew: file(relativePath: {eq: "poe-new-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    poenew: file(relativePath: {eq: "poe-new-bio.jpg"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      cassianandor: file(relativePath: {eq: "cassian-andor-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    cassianandor: file(relativePath: {eq: "cassian-andor-bio.jpg"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      bokatan: file(relativePath: {eq: "bo-katan-bio.jpg"}) {
-        ...ImageSettings
+    }
+    
+    bokatan: file(relativePath: {eq: "bo-katan-bio.jpg"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      kitfisto: file(relativePath: {eq: "kit-fisto-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    kitfisto: file(relativePath: {eq: "kit-fisto-bio.jpg"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      plokoon: file(relativePath: {eq: "plo-koon-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    plokoon: file(relativePath: {eq: "plo-koon-bio.jpg"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      shaakti: file(relativePath: {eq: "shaak-ti-bio.png"}) {
-        ...ImageSettings
+    }
+
+    shaakti: file(relativePath: {eq: "shaak-ti-bio.png"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      c3po: file(relativePath: {eq: "c3po-bio.png"}) {
-        ...ImageSettings
+    }
+
+    c3po: file(relativePath: {eq: "c3po-bio.png"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      r2d2: file(relativePath: {eq: "r2d2-bio.png"}) {
-        ...ImageSettings
+    }
+
+    artoo: file(relativePath: {eq: "r2d2-bio.png"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      bb8: file(relativePath: {eq: "bb8-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    caradune: file(relativePath: {eq: "cara-dune-bio.jpg"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      caradune: file(relativePath: {eq: "cara-dune-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    captainrex: file(relativePath: {eq: "captain-rex-bio.jpg"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      captainrex: file(relativePath: {eq: "captain-rex-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    commandercody: file(relativePath: {eq: "commander-cody-bio.png"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
-      commandercody: file(relativePath: {eq: "commander-cody-bio.png"}) {
-        ...ImageSettings
+    }
+
+    bb8: file(relativePath: {eq: "bb8-bio.jpg"}) {
+      childImageSharp {
+        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
+    }
   }
 `

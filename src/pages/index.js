@@ -18,7 +18,7 @@ export default function Home( {data} ) {
 					<div className="text-white">
 						<h2 className="font-dosis mobile:text-3xl desktop:text-5xl text-center mx-[10%] laptop:pt-[50%]">Welcome to The Jedi Archives</h2>
 					</div>
-					<div className="mobile:max-w-[375px] mobile:mt-5 mobile:max-h-[250px] laptop:max-h-[835px]"><KyloAni /></div>
+					<div className="mobile:pb-10 mobile:mt-5 laptop:max-h-[835px]"><KyloAni /></div>
 					<div className="text-white">
 						<h2 className="font-dosis mobile:text-3xl desktop:text-5xl text-center mx-[10%] laptop:pt-[50%]">A Full Wikipedia for Star Wars Nerds</h2>
 					</div>
