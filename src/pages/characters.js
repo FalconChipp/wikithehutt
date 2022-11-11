@@ -58,26 +58,28 @@ export default function Characters({ data, location="" }) {
     )
   }
 
-export const ImageSettings = graphql `
-fragment ImageSettings on File {
-    childImageSharp {
-      gatsbyImageData(
-        layout: FULL_WIDTH
-        placeholder: BLURRED
-        formats: [AUTO]
-      )
-    }
-  }
 
-`
 
-export const Images = graphql `
+export const Getimages = graphql `
   query {
-    lightside: file(relativePath: {eq: "lightsidelogo.png"}) {
-      ...ImageSettings
+    lightside: file(relativePath: {eq: "lightsidelogo.png"} ) {
+      childImageSharp {
+        gatsbyImageData( 
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: [AUTO]
+        )
+      }
     }
-    darkside: file(relativePath: {eq: "darksidelogo.jpg"}) {
-      ...ImageSettings
+
+    darkside: file(relativePath: {eq: "darksidelogo.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData( 
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: [AUTO]
+        )
+      }
     }
   }
 `

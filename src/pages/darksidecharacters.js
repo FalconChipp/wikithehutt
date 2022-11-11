@@ -291,128 +291,367 @@ export default function Characters({ data, location }) {
     )
   }
 
-export const ImageSettings = graphql `
-fragment ImageSettings on File {
-    childImageSharp {
-      gatsbyImageData(
-        layout: FULL_WIDTH
-        placeholder: BLURRED
-        formats: [AUTO]
-      )
-    }
-  }
-
-`
-
-export const Images = graphql `
+export const DarkSideBios = graphql ` 
   query {
-    darthvader: file(relativePath: {eq: "darth-vader-bio.png"}) {
-      ...ImageSettings
+
+    darthvader: file(relativePath: {eq: "darth-vader-bio.png"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
+      }
     }
-    darthmaul: file(relativePath: {eq: "maul-bio.jpg"}) {
-      ...ImageSettings
+    
+    darthmaul: file(relativePath: {eq: "maul-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
+      }
     }
-    darthsidious: file(relativePath: {eq: "darth-sidious.jpg"}) {
-        ...ImageSettings
+
+    darthsidious: file(relativePath: {eq: "darth-sidious.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      kyloren: file(relativePath: {eq: "kylo-ren-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    kyloren: file(relativePath: {eq: "kylo-ren-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      starkiller: file(relativePath: {eq: "starkiller-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    starkiller: file(relativePath: {eq: "starkiller-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      countdooku: file(relativePath: {eq: "count-dooku-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    countdooku: file(relativePath: {eq: "count-dooku-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      generalgrevious: file(relativePath: {eq: "general-grevious-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    generalgrevious: file(relativePath: {eq: "general-grevious-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      snoke: file(relativePath: {eq: "snoke-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    snoke: file(relativePath: {eq: "snoke-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      assajj: file(relativePath: {eq: "assajj-ventress-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    assajj: file(relativePath: {eq: "assajj-ventress-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      bb9e: file(relativePath: {eq: "bb9e-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    bb9e: file(relativePath: {eq: "bb9e-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      droideka: file(relativePath: {eq: "droideka-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    droideka: file(relativePath: {eq: "droideka-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      ig88: file(relativePath: {eq: "ig88-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    ig88: file(relativePath: {eq: "ig88-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      magna: file(relativePath: {eq: "magna-guards-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    magna: file(relativePath: {eq: "magna-guards-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      savageoppress: file(relativePath: {eq: "savage-oppress-bio.png"}) {
-        ...ImageSettings
+    }
+
+    savageoppress: file(relativePath: {eq: "savage-oppress-bio.png"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      grandinq: file(relativePath: {eq: "grand-inq-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    grandinq: file(relativePath: {eq: "grand-inq-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      b1droid: file(relativePath: {eq: "b1-droid-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    b1droid: file(relativePath: {eq: "b1-droid-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      darthmalek: file(relativePath: {eq: "darth-malek-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    darthmalek: file(relativePath: {eq: "darth-malek-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      b2battledroid: file(relativePath: {eq: "b2-battle-droid.jpg"}) {
-        ...ImageSettings
+    }
+
+    b2battledroid: file(relativePath: {eq: "b2-battle-droid.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      captainphasma: file(relativePath: {eq: "captain-phasma-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    captainphasma: file(relativePath: {eq: "captain-phasma-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      darktrooper: file(relativePath: {eq: "dark-trooper-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    darktrooper: file(relativePath: {eq: "dark-trooper-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      darthmalgus: file(relativePath: {eq: "darth-malgus-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    darthmalgus: file(relativePath: {eq: "darth-malgus-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      darthnil: file(relativePath: {eq: "darth-nil-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    darthnil: file(relativePath: {eq: "darth-nil-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      darthrevan: file(relativePath: {eq: "darth-revan-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    darthrevan: file(relativePath: {eq: "darth-revan-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      darthsion: file(relativePath: {eq: "darth-sion-bio.png"}) {
-        ...ImageSettings
+    }
+
+    darthsion: file(relativePath: {eq: "darth-sion-bio.png"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      darthtalon: file(relativePath: {eq: "darth-talon-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    darthtalon: file(relativePath: {eq: "darth-talon-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      darthtraya: file(relativePath: {eq: "darth-traya.jpg"}) {
-        ...ImageSettings
+    }
+
+    darthtraya: file(relativePath: {eq: "darth-traya.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      deathtrooper: file(relativePath: {eq: "death-trooper-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    deathtrooper: file(relativePath: {eq: "death-trooper-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      directorkrennic: file(relativePath: {eq: "director-krennic-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    directorkrennic: file(relativePath: {eq: "director-krennic-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      gamguardnew: file(relativePath: {eq: "gamorrean-bio-new.jpeg"}) {
-        ...ImageSettings
+    }
+
+    gamguardnew: file(relativePath: {eq: "gamorrean-bio-new.jpeg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      firstorderex: file(relativePath: {eq: "first-order-ex-bio.png"}) {
-        ...ImageSettings
+    }
+
+    firstorderex: file(relativePath: {eq: "first-order-ex-bio.png"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      generalhux: file(relativePath: {eq: "general-hux-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    generalhux: file(relativePath: {eq: "general-hux-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      grandtarkin: file(relativePath: {eq: "tarkin-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    grandtarkin: file(relativePath: {eq: "tarkin-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      jangofett: file(relativePath: {eq: "jango-fett-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    jangofett: file(relativePath: {eq: "jango-fett-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      jabbahutt: file(relativePath: {eq: "jabba-hutt-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    jabbahutt: file(relativePath: {eq: "jabba-hutt-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      krr: file(relativePath: {eq: "krrsantan-bio.jpg"}) {
-        ...ImageSettings
+    }
+
+    krr: file(relativePath: {eq: "krrsantan-bio.jpg"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
-      moff: file(relativePath: {eq: "moff-gideon-bio.png"}) {
-        ...ImageSettings
+    }
+
+    moff: file(relativePath: {eq: "moff-gideon-bio.png"} ) {
+      childImageSharp {
+        gatsbyImageData (
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
       }
+    }
   }
 `
