@@ -5,7 +5,6 @@ import "../styles/keyframes.css";
 import KyloAni from "../components/KyloAnimation";
 import { siteMetadata } from "../../gatsby-config";
 import { Link, graphql } from "gatsby";
-import { GatsbyImage } from "gatsby-plugin-image";
 
 export const Head = () => <title>{siteMetadata.title}</title>
 
@@ -16,11 +15,11 @@ export default function Home( {data} ) {
 			<section>
 				<div className="grid mobile:grid-cols-1 tabletLand:grid-cols-1 laptop:grid-cols-3">
 					<div className="text-white">
-						<h2 className="font-dosis mobile:text-3xl desktop:text-5xl text-center mx-[10%] laptop:pt-[50%]">Welcome to The Jedi Archives</h2>
+						<h2 className="font-dosis mobile:text-3xl laptop:text-5xl text-center mx-[10%] laptop:pt-[50%] mobile:mb-7">Welcome to The Jedi Archives</h2>
 					</div>
-					<div className="mobile:pb-10 mobile:mt-5 laptop:max-h-[835px]"><KyloAni /></div>
+					<div className="mobile:pb-10 mobile:mt-5 laptop:max-h-[835px] mobile:max-h-[60vh]"><KyloAni /></div>
 					<div className="text-white">
-						<h2 className="font-dosis mobile:text-3xl desktop:text-5xl text-center mx-[10%] laptop:pt-[50%]">A Full Wikipedia for Star Wars Nerds</h2>
+							<h2 className="font-dosis mobile:text-3xl laptop:text-5xl text-center mx-[10%] laptop:pt-[50%] mobile:pt-0 mobile:mt-[-80px]">A Full Wikipedia for Star Wars Nerds</h2>
 					</div>
 				</div>
 			</section>

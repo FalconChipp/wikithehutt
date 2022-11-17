@@ -13,7 +13,7 @@ export default function Mando({data, location}) {
                 <h1 className="text-white text-center font-jedi text-6xl pt-5 pb-10">The Mandalorian</h1>
                 <div className="grid grid-cols-2 gap-5 container-center">
                     <div>
-                        <GatsbyImage image={data.mando.childImageSharp.gatsbyImageData} alt="mando"/>
+                        <GatsbyImage image={data.din.childImageSharp.gatsbyImageData} alt="mando"/>
                     </div>
                     <div className="align-center">
                         <h3 className="text-white font-dosis text-4xl">Alignment: </h3>
@@ -98,10 +98,3 @@ export default function Mando({data, location}) {
     );
 }
 
-export const Images = graphql `
-    query {
-        mando: file(relativePath: {eq: "the-mando-bio.png"}) {
-            ...ImageSettings
-        }
-    }
-`
