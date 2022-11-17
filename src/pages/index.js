@@ -19,7 +19,7 @@ export default function Home( {data} ) {
 					</div>
 					<div className="mobile:pb-10 mobile:mt-5 laptop:max-h-[835px] mobile:max-h-[60vh]"><KyloAni /></div>
 					<div className="text-white">
-							<h2 className="font-dosis mobile:text-3xl laptop:text-5xl text-center mx-[10%] laptop:pt-[50%] mobile:pt-0 mobile:mt-[-80px]">A Full Wikipedia for Star Wars Nerds</h2>
+							<h2 className="font-dosis mobile:text-3xl laptop:text-5xl text-center mx-[10%] laptop:pt-[50%] mobile:pt-0">A Full Wikipedia for Star Wars Nerds</h2>
 					</div>
 				</div>
 			</section>

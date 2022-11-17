@@ -98,3 +98,12 @@ export default function Mando({data, location}) {
     );
 }
 
+export const DinImage = graphql `
+	query { 
+		din: file(relativePath: {eq: "din-bio.png"}) {
+			childImageSharp {
+			gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+			}
+		}
+	}
+  `
