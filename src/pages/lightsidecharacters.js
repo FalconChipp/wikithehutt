@@ -246,185 +246,185 @@ export default function Characters({ data, location }) {
     )
   }
 
-export const LightSideImgs = graphql `
+export const LightSide = graphql `
   query {
     chewbacca: file(relativePath: {eq: "chewbacca-bio.jpg"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     obiwan: file(relativePath: {eq: "obi-wan-bio1.jpg"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     yoda: file(relativePath: {eq: "yoda-bio.jpg"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     lukeskywalker: file(relativePath: {eq: "luke-skywalker-bio.jpg"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     grogu: file(relativePath: {eq: "grogu-4k.jpg"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     aayla: file(relativePath: {eq: "aayla-secura-bio.jpg"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     ahsoka: file(relativePath: {eq: "ahsoka-tano-bio.jpg"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     admiralackbar: file(relativePath: {eq: "admiral-ackbar-bio.png"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     anakinskywalker: file(relativePath: {eq: "anakin-skywalker-bio.jpg"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     sexypadme: file(relativePath: {eq: "sexy-padme-bio.jpg"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     macewindu: file(relativePath: {eq: "mace-windu-bio.jpg"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     quigon: file(relativePath: {eq: "qui-gon-bio.jpg"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     hansolo: file(relativePath: {eq: "han-solo-bio.jpg"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     leia: file(relativePath: {eq: "leia-bio.jpg"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     lando: file(relativePath: {eq: "lando-bio.jpg"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     din: file(relativePath: {eq: "din-bio.png"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     rey: file(relativePath: {eq: "rey-bio.png"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     finn: file(relativePath: {eq: "finn-bio.png"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     poenew: file(relativePath: {eq: "poe-new-bio.jpg"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     cassianandor: file(relativePath: {eq: "cassian-andor-bio.jpg"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
     
     bokatan: file(relativePath: {eq: "bo-katan-bio.jpg"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     kitfisto: file(relativePath: {eq: "kit-fisto-bio.jpg"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     plokoon: file(relativePath: {eq: "plo-koon-bio.jpg"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     shaakti: file(relativePath: {eq: "shaak-ti-bio.png"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     c3po: file(relativePath: {eq: "c3po-bio.png"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     artoo: file(relativePath: {eq: "r2d2-bio.png"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     caradune: file(relativePath: {eq: "cara-dune-bio.jpg"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     captainrex: file(relativePath: {eq: "captain-rex-bio.jpg"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     commandercody: file(relativePath: {eq: "commander-cody-bio.png"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
 
     bb8: file(relativePath: {eq: "bb8-bio.jpg"}) {
       childImageSharp {
-        gatsbyImageData (layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
+        gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED, formats: WEBP)
       }
     }
   }
