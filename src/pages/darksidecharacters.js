@@ -3,14 +3,12 @@ import Layout from "../components/Layout";
 import { GatsbyImage } from "gatsby-plugin-image"
 import { graphql, Link } from "gatsby";
 import { siteMetadata } from "../../gatsby-config";
-import { Breadcrumb } from "gatsby-plugin-breadcrumb";
 
 export const Head = () => <title>{siteMetadata.title} - {siteMetadata.darksidechars.title}</title>
-export default function Characters({ data, location }) {
+export default function Characters({ data }) {
     return (
       <Layout>
       <div className="w-full">
-      <Breadcrumb location={location} crumbLabel="Dark Side Characters"></Breadcrumb>
         <section className="bg-cover bg-center bg-charactersBg max-h-max md:px-10 xl:px-40 pt-32 text-white py-32">
           <h1 className="pt-15 py-4 text-center font-jedi text-6xl">Dark Side Characters</h1>
           <p className="py-4 text-center text-xl">Here you can view all the Dark Side Characters</p>
