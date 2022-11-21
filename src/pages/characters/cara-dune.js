@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 export const Head = () => <title>Cara Dune</title>
-export default function CaraDune({data, location}) {
+export default function CaraDune({data}) {
     return (
         <Layout>
             <section className="w-full grid">

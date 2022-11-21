@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 export const Head = () => <title>Gamorrean Guard</title>
-export default function GamorreanGuard({data, location}) {
+export default function GamorreanGuard({data}) {
     return (
         <Layout>
             <section className="w-full grid">

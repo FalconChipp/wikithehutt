@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 export const Head = () => <title>Plo Koon</title>
-export default function PloKoon({data, location}) {
+export default function PloKoon({data}) {
     return (
         <Layout>
             <section className="w-full grid">

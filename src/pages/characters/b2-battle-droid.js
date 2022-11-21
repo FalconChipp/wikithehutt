@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 export const Head = () => <title>B2 Super Battle Droid</title>
-export default function B2Droid({data, location}) {
+export default function B2Droid({data}) {
     return (
         <Layout>
             <section className="w-full grid">

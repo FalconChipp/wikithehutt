@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 export const Head = () => <title>Bo-Katan Kryze</title>
-export default function BoKatan({data, location}) {
+export default function BoKatan({data}) {
     return (
         <Layout>
             <section className="w-full grid">

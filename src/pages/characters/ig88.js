@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image"; 
 
 export const Head = () => <title>IG-88</title>
-export default function IG88({data, location}) {
+export default function IG88({data}) {
     return (
         <Layout>
             <section className="w-full grid">

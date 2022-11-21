@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image"
 
 export const Head = () => <title>Darth Vader</title>
-export default function Vader({data, location}) {
+export default function Vader({data}) {
     return (
         console.log(data),
         <Layout>

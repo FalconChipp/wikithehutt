@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
  
 export const Head = () => <title>Poe Dameron</title>
-export default function PoeDameron({data, location}) {
+export default function PoeDameron({data}) {
     return (
         <Layout>
             <section className="w-full grid">

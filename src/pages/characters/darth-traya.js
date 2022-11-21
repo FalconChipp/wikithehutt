@@ -5,7 +5,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 
 export const Head = () => <title>Darth Traya</title>
-export default function Traya({data, location}) {
+export default function Traya({data}) {
     return (
         <Layout>
             <section className="w-full grid">

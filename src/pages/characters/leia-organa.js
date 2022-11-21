@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 export const Head = () => <title>Leia Organa</title>
-export default function LeiaOrgana({data, location}) {
+export default function LeiaOrgana({data}) {
     return (
         <Layout>
             <section className="w-full grid">
