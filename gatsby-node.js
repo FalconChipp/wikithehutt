@@ -1,7 +1,7 @@
 exports.createPages = async ({ actions }) => {
     actions.createSlice({
         id: `header`, 
-        component: require.resolve(`./src/components/nav.js`),
+        component: require.resolve(`./src/components/Nav.js`),
     })
 
     actions.createSlice({ 
