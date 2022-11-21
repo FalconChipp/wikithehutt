@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 export const Head = () => <title>Commander Cody</title>
-export default function CommanderCody({data, location}) {
+export default function CommanderCody({data}) {
     return (
         <Layout>
             <section className="w-full grid">

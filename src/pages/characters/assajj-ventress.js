@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 export const Head = () => <title>Assajj Ventress</title>
-export default function AssajjVentress({data, location}) {
+export default function AssajjVentress({data}) {
     return (
         <Layout>
             <section className="w-full grid">

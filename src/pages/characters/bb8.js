@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 export const Head = () => <title>BB-8</title>
-export default function BB8({data, location}) {
+export default function BB8({data}) {
     return (
         <Layout>
             <section className="w-full grid">

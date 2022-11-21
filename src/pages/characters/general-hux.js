@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 export const Head = () => <title>General Hux</title>
-export default function Hux({data, location}) {
+export default function Hux({data}) {
     return (
         <Layout>
             <section className="w-full grid">

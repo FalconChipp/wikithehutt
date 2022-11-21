@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 export const Head = () => <title>Grand Moff Gideon</title>
-export default function MoffGideon({data, location}) {
+export default function MoffGideon({data}) {
     return (
         <Layout>
             <section className="w-full grid">

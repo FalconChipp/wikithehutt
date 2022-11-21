@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 export const Head = () => <title>Savage Opress</title>
-export default function SavageOpress({data, location}) {
+export default function SavageOpress({data}) {
     return (
         <Layout>
             <section className="w-full grid">

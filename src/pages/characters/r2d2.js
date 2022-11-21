@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 export const Head = () => <title>R2-D2</title>
-export default function R2D2({data, location}) {
+export default function R2D2({data}) {
     return (
         <Layout>
             <section className="w-full grid">

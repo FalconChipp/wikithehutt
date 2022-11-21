@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 export const Head = () => <title>Droideka</title>
-export default function Droideka({data, location}) {
+export default function Droideka({data}) {
     return (
         <Layout>
             <section className="w-full grid">

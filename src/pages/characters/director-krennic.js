@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 export const Head = () => <title>Director Krennic</title>
-export default function Krennic({data, location}) {
+export default function Krennic({data}) {
     return (
         <Layout>
             <section className="w-full grid">

@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 export const Head = () => <title>C3-PO</title>
-export default function C3PO({data, location}) {
+export default function C3PO({data}) {
     return (
         <Layout>
             <section className="w-full grid">

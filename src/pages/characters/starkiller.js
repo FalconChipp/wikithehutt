@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 export const Head = () => <title>Starkiller</title>
-export default function Starkiller({data, location}) {
+export default function Starkiller({data}) {
     return (
         <Layout>
             <section className="w-full grid">

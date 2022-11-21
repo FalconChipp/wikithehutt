@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 export const Head = () => <title>Han Solo</title>
-export default function HanSolo({data, location}) {
+export default function HanSolo({data}) {
     return (
         <Layout>
             <section className="w-full grid">

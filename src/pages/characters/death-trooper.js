@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 export const Head = () => <title>Death Trooper</title>
-export default function DeathTrooper({data, location}) {
+export default function DeathTrooper({data}) {
     return (
         <Layout>
             <section className="w-full grid">

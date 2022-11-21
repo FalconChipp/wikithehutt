@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image"
 
 export const Head = () => <title>Ahsoka Tano</title>
-export default function AhsokaTano({data, location}) {
+export default function AhsokaTano({data}) {
     return (
         <Layout>
             <section className="w-full grid">

@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 export const Head = () => <title>Count Dooku</title>
-export default function CountDooku({data, location}) {
+export default function CountDooku({data}) {
     return (
         <Layout>
             <section className="w-full grid">

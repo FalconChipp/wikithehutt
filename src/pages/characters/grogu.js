@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image"; 
 
 export const Head = () => <title>Grogu</title>
-export default function Grogu({data, location}) {
+export default function Grogu({data}) {
     return (
         <Layout>
             <section className="w-full grid">

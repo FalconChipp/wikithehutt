@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
 
 export const Head = () => <title>The Grand Inquisitor</title>
-export default function GrandInquisitor({data, location}) {
+export default function GrandInquisitor({data}) {
     return (
         <Layout>
             <section className="w-full grid">
