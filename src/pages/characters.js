@@ -3,15 +3,13 @@ import Layout from "../components/Layout";
 import { GatsbyImage } from "gatsby-plugin-image"
 import { graphql, Link } from "gatsby";
 import { siteMetadata } from "../../gatsby-config";
-import { Breadcrumb } from "gatsby-plugin-breadcrumb";
 
 export const Head = () => <title>{siteMetadata.title} - {siteMetadata.characters.title}</title>
-export default function Characters({ data, location="" }) {
+export default function Characters({ data }) {
     return (
       console.log(data),
       <Layout>
       <div className="w-full">
-      <Breadcrumb location={location} crumbLabel="Characters"></Breadcrumb>
         <section className="bg-cover bg-center bg-charactersBg max-h-max md:px-10 xl:px-40 pt-32 text-white py-32">
           <h1 className="pt-15 py-4 text-center font-jedi text-6xl">Star Wars Characters</h1>
           <p className="py-4 text-center text-xl">

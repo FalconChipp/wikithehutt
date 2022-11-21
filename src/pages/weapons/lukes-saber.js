@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../../components/Layout";
 import LukeSaber from "../../components/Load-Models/LoadLuke";
-import { Breadcrumb } from "gatsby-plugin-breadcrumb";
 
 export const Head = () => <title>Luke Skywalkers Lightsaber</title>
 export default function AnakinsSaber({data, location}) {
@@ -9,7 +8,6 @@ export default function AnakinsSaber({data, location}) {
         <Layout>
             <section className="w-full grid">
 
-                <Breadcrumb location={location} crumbLabel="Lukes Lightsaber"></Breadcrumb>
                 <h1 className="text-white text-center font-jedi text-6xl pt-5 pb-10">Lukes Saber</h1>
                 <div>
                     <LukeSaber />

@@ -2,14 +2,12 @@ import React from "react";
 import Layout from "../../components/Layout";
 import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
-import { Breadcrumb } from "gatsby-plugin-breadcrumb";
 
 export const Head = () => <title>Admiral Ackbar</title>
-export default function AdmiralAckbar({data, location}) {
+export default function AdmiralAckbar({data }) {
     return (
         <Layout>
             <section className="w-full grid">
-                <Breadcrumb location={location} crumbLabel="Admiral Ackbar"></Breadcrumb>
                 <h1 className="text-white text-center font-jedi text-6xl pt-5 pb-10">Admiral Ackbar</h1>
                 <div className="grid grid-cols-2 gap-5 container-center">
                     <div>
