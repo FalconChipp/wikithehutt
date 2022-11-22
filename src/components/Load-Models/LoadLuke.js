@@ -6,7 +6,7 @@ import { GLTFLoader} from "three/examples/jsm/loaders/GLTFLoader";
 // Visual percentage value for loading of the 3d model
 function Loader() {
     const { progress } = useProgress; 
-    return <Html center>{progress} % loaded</Html>
+    return <Html center style={{color: "white"}}>{progress} % loaded</Html>
 }
 
 // Sets rotation animation for the model, 0 meaning no rotation
