@@ -6,7 +6,7 @@ import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 
 function Loader() {
   const { progress } = useProgress();
-  return <Html center>{progress} % loaded</Html>;
+  return <Html center style={{color: "white"}}>{progress} % loaded</Html>;
 }
 
 const LoadAnakin = (args) => {
