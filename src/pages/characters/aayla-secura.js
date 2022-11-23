@@ -2,8 +2,9 @@ import React from "react";
 import Layout from "../../components/Layout";
 import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image";
+import { AaylaSeo } from "../../components/SEO";
 
-export const Head = () => <title>Aayla Secura</title>
+export const Head = () => <AaylaSeo />
 export default function AaylaSecura({data}) {
     return (
         <Layout>

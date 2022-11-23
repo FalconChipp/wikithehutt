@@ -3,7 +3,7 @@ import Layout from "../../components/Layout";
 import LukeSaber from "../../components/Load-Models/LoadLuke";
 
 export const Head = () => <title>Luke Skywalkers Lightsaber</title>
-export default function AnakinsSaber({data, location}) {
+export default function LukesSaber({data, location}) {
     return (
         <Layout>
             <section className="w-full grid">
