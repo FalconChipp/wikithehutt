@@ -10,6 +10,7 @@
       title: `Wiki The Hutt`,
       description: `The unoffical Star Wars Wiki | Wiki The Hutt`,
       author: `Ryan Chippendale & Luke Sharples`,
+      locale: `en_GB`, 
 
         characters: {
           title: `Characters`,
@@ -36,18 +37,6 @@
           description: `#`
         },
 
-        // keywords: {
-        //   home: {
-        //     keyword1: `star wars`,
-        //     keyword2: `wiki`, 
-        //   }, 
-
-        //   characters: {
-        //     keyword1: `characters`,
-        //     keyword2: `dark side`, 
-        //     keyword3: `light side`,
-        //   }
-        // }
     },
   plugins: [
     {

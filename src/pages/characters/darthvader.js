@@ -2,8 +2,9 @@ import React from "react";
 import Layout from "../../components/Layout";
 import { Link, graphql } from "gatsby";
 import { GatsbyImage } from "gatsby-plugin-image"
+import VaderSeo from "../../components/SEO";
 
-export const Head = () => <title>Darth Vader</title>
+export const Head = () => <VaderSeo />
 export default function Vader({data}) {
     return (
         console.log(data),

@@ -11,9 +11,6 @@ export default function Timeline() {
       <Layout>
         <Link className="text-white"to="#2">Next</Link>
       <section className="timeline container1 grid grid-cols-4 scroll" id="1">
-      <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" />
-      <Script src="https://thekenwheeler.herokuapp.com/scripts/browserSwipe.js" />
-      <Script src="https://thekenwheeler.herokuapp.com/scripts/touchswipe.js" />
         <div className="tl-item">
           <div className="tl-bg"></div>
           <div className="tl-year">
