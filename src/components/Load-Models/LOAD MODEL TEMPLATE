@@ -1,0 +1,48 @@
+// ------------------------------------- START IMPORTS ------------------------------------------------
+import React from 'react';
+import { Suspense, useRef } from 'react';
+import { Canvas, useFrame, useLoader } from '@react-three/fiber';
+import { Html, OrbitControls, useProgress } from '@react-three/drei';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+// ------------------------------------- END IMPORTS ------------------------------------------------
+
+// To set a new model Loader, copy and paste all code here to seperate file
+// Find and replace all "[CHAR_NAME]" including [] with character name, for example [CHAR_NAME] -> Anakin so should read LoadAnakin
+// Find and replace all "[char_name]" including [] with character name, for example [charname] -> Anakin so should read loadanakin
+
+
+// Display % loader if connection is slow
+function Loader() {
+  const { progress } = useProgress();
+  return <Html center style={{color: "white"}}>{progress} % loaded</Html>;
+}
+
+// Rotation animation variables for model
+const Load[CHAR_NAME] = (args) => {
+  const load[char_name] = useRef();
+  useFrame(() => {
+    if (load[char_name].current) {
+      load[char_name].current.rotation.x += 0.007;
+      load[char_name].current.rotation.y += 0;
+      // load[char_name].current.position.z = (load[char_name].current.position.z + 0.01) % 10;
+    }
+  });
+
+  // Get model 
+  const gltf = useLoader(GLTFLoader, '../../models/[PARENT_FOLDER_NAME]/scene.gltf');
+  return <primitive ref={load[char_name]} object={gltf.scene} {...args} />;
+};
+
+// display model on the page, set canvas styles and scene lighting, disbale user being able to rotate the model 
+export default function [CHAR_NAME]Saber() {
+  return (
+    <Canvas style={{ height: '40vh' }}>
+      <Suspense fallback={<Loader />}>
+        <ambientLight color="white" position={[10, 10, 10]} intensity={[0.2]}/>
+        <pointLight color="white" position={[0, 0, 0]} intensity={[1]}/> 
+        <Load{CHAR_NAME} position={[-50, -10, -150]} scale={20} rotation-x={10} />
+        <OrbitControls enabled={false}/>
+      </Suspense>
+    </Canvas>
+  );
+}
