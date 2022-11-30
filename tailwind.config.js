@@ -91,7 +91,7 @@ module.exports = {
       }, 
       backgroundImage: {
         'charactersBg': "url('../../static/images/background.png')",
-        'site': "url('../../static/images/stars.jpeg')",
+        'site': "url('../../static/images/stars.webp')",
         'weapons': "url('../../static/images/weapons.png')",
         'xwing': "url('../../static/images/xwing.jpg')",
         'planet': "url('../../static/images/planet.jpg')",

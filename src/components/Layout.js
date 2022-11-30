@@ -6,7 +6,6 @@ import AdCont from "./Ads";
 
 
 export default function Layout({ children }) {
-    
     const Ads = () => {
         const scrolled = useRef(null)
     
@@ -31,18 +30,18 @@ export default function Layout({ children }) {
     }
     
     return (
-        <div className="bg-site w-full h-full bg-contain bg-repeat-y">
-            <link rel="preconnect" href="https://fonts.gstatic.com"/>
-            <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
-            <Ads />
-            <Slice alias="header" />
-            <div className="content">
-                { children }
-                <AdCont />
-            </div>
-            
-            <Slice alias="footer" />
-       
-        </div>
+            <div className="bg-site w-full h-full bg-contain bg-repeat-y"> 
+                <link rel="preconnect" href="https://fonts.gstatic.com"/>
+                <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet" />
+                <Ads />
+                <Slice alias="header" />
+                <div className="content">
+                    { children }
+                    <AdCont />
+                </div>
+                
+                <Slice alias="footer" />
+        
+            </div> 
         )
   }
