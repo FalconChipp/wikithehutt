@@ -93,7 +93,7 @@ module.exports = {
         'charactersBg': "url('../../static/images/charactersBg.webp')",
         'site': "url('../../static/images/stars.webp')",
         'weapons': "url('../../static/images/weaponsBg.webp')",
-        'xwing': "url('../../static/images/xwing.jpg')",
+        'xwing': "url('../../static/images/shipsBg.webp')",
         'planet': "url('../../static/images/planetsBg.webp')",
       },
 

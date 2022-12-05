@@ -4,7 +4,7 @@ import "../styles/kylohp.css";
 import "../styles/keyframes.css";
 import KyloAni from "../components/KyloAnimation";
 import { siteMetadata } from "../../gatsby-config";
-import { Link, graphql } from "gatsby";
+import { Link } from "gatsby";
 
 export const Head = () => <title>{siteMetadata.title}</title>
 
