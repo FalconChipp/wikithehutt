@@ -90,11 +90,11 @@ module.exports = {
         '2': '2',
       }, 
       backgroundImage: {
-        'charactersBg': "url('../../static/images/background.png')",
+        'charactersBg': "url('../../static/images/charactersBg.webp')",
         'site': "url('../../static/images/stars.webp')",
-        'weapons': "url('../../static/images/weapons.png')",
+        'weapons': "url('../../static/images/weaponsBg.webp')",
         'xwing': "url('../../static/images/xwing.jpg')",
-        'planet': "url('../../static/images/planet.jpg')",
+        'planet': "url('../../static/images/planetsBg.webp')",
       },
 
       content: {
