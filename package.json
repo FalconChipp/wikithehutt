@@ -11,10 +11,11 @@
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "preload-fonts": "gatsby-preload-fonts"
   },
   "dependencies": {
-    "@react-three/drei": "^9.45.0",
+    "@react-three/drei": "^9.46.2",
     "@react-three/fiber": "^8.9.1",
     "babel-plugin-styled-components": "^2.0.7",
     "engine.io": "^6.2.1",
@@ -23,6 +24,7 @@
     "gatsby-plugin-google-fonts": "^1.0.1",
     "gatsby-plugin-image": "^3.2.0",
     "gatsby-plugin-local-search": "^2.0.1",
+    "gatsby-plugin-preload-fonts": "^4.2.0",
     "gatsby-plugin-react-helmet": "^6.2.0",
     "gatsby-plugin-sharp": "^5.2.0",
     "gatsby-plugin-styled-components": "^6.2.0",
@@ -37,7 +39,7 @@
     "react-is": "^18.2.0",
     "socket.io": "^4.5.4",
     "styled-components": "^5.3.6",
-    "three": "^0.146.0"
+    "three": "^0.147.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
@@ -48,7 +50,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/lukesharples123/starwarsgoat"
+    "url": "https://github.com/FalconChipp/wikithehutt"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"

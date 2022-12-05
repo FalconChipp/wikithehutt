@@ -298,4 +298,131 @@ exports.createPages = async ({ actions }) => {
         id: `kitContent`, 
         component: require.resolve(`./src/components/CharacterContent/KitContent.js`)
     })
+    // ------------------ SHIPS SLICES ------------------------------------------------------------------
+
+    // actions.createSlice({ 
+    //     id: `awingContent`,
+    //     component: require.resolve(`./src/components/ShipsContent/AwingContent.js`)
+    // })
+    // actions.createSlice({
+    //     id: `bwingContent`, 
+    //     component: require.resolve(`./src/components/ShipsContent/BwingContent.js`)
+    // })
+    // actions.createSlice({
+    //     id: `cr90Content`,
+    //     component: require.resolve(`./src/components/ShipsContent/Cr90Content.js`)
+    // })
+    // actions.createSlice({
+    //     id: `deathstar`, 
+    //     component: require.resolve(`./src/components/ShipsContent/DeathStarContent.js`)
+    // })
+    // actions.createSlice({
+    //     id: `dreadnaught`,
+    //     component: require.resolve(`./src/components/ShipsContent/DreadnaughtContent.js`)
+    // }) 
+    // actions.createSlice({ 
+    //     id: `falconContent`, 
+    //     component: require.resolve(`./src/components/ShipsContent/FalconContent.js`)
+    // })
+    // actions.createSlice({ 
+    //     id: `nebulonContent`, 
+    //     component: require.resolve(`./src/components/ShipsContent/NebulonContent.js`)
+    // })
+    // actions.createSlice({ 
+    //     id: `slaveContent`, 
+    //     component: require.resolve(`./src/components/ShipsContent/SlaveContent.js`)
+    // })
+    // actions.createSlice({
+    //     id: `destroyerContent`, 
+    //     component: require.resolve(`./src/components/ShipsContent/DestroyerContent`)
+    // })
+    // actions.createSlice({ 
+    //     id: `superdestroyerContent`, 
+    //     component: require.resolve(`./src/components/ShipsContent/SuperDestroyerContent.js`)
+    // })
+    // actions.createSlice({ 
+    //     id: `t4aContent`, 
+    //     component: require.resolve(`./src/components/ShipsContent/T4aContent.js`)
+    // })
+    // actions.createSlice({ 
+    //     id: `tieAdvancedContent`, 
+    //     component: require.resolve(`./src/components/ShipsContent/TieAdvContent.js`)
+    // })
+    // actions.createSlice({ 
+    //     id: `tieContent`, 
+    //     component: require.resolve(`./src/components/ShipsContent/TieContent.js`)
+    // })
+    // actions.createSlice({ 
+    //     id: `tieIntContent`, 
+    //     component: require.resolve(`./src/components/ShipsContent/TieIntContent.js`)
+    // })
+    // actions.createSlice({ 
+    //     id: `xwingContent`, 
+    //     component: require.resolve(`./src/components/ShipsContent/XwingContent`)
+    // })
+    // actions.createSlice({ 
+    //     id: `ywingContent`, 
+    //     component: require.resolve(`./src/components/ShipsContent/YwingContent.js`)
+    // })
+    // // ------------------------------- PLANETS SLICES --------------------------------
+    // actions.createSlice({
+    //     id: `bespinContent`, 
+    //     component: require.resolve(`./src/components/PlanetContent/BespinContent.js`)
+    // })
+    // actions.createSlice({
+    //     id: `coruscantContent`, 
+    //     component: require.resolve(`./src/components/PlanetContent/CoruscantContent.js`)
+    // })
+    // actions.createSlice({ 
+    //     id: `dagobahContent`, 
+    //     content: require.resolve(`./src/components/PlanetContent/DagobahContent.js`)
+    // })
+    // actions.createSlice({ 
+    //     id: `hosnianContent`, 
+    //     component: require.resolve(`./src/components/PlanetContent/HosnianContent.js`)
+    // })
+    // actions.createSlice({ 
+    //     id: `hothContent`, 
+    //     component: require.resolve(`./src/components/PlanetContent/Hoth.js`)
+    // })
+    // actions.createSlice({
+    //     id: `jakkuContent`, 
+    //     component: require.resolve(`./src/components/PlanetContent/Jakku.js`)
+    // })
+    // actions.createSlice({ 
+    //     id: `kaminoContent`, 
+    //     component: require.resolve(`./src/components/PlanetContent/KaminoContent.js`)
+    // })
+    // actions.createSlice({
+    //     id: `kashyyykContent`,
+    //     component: require.resolve(`./src/components/PlanetContent/KashyyykContent.js`)
+    // })
+    // actions.createSlice({ 
+    //     id: `mandaloreContent`, 
+    //     component: require.resolve(`./src/components/PlanetContent/MandaloreContent.js`)
+    // })
+    // actions.createSlice({ 
+    //     id: `mustafarContent`, 
+    //     component: require.resolve(`./src/components/PlanetContent/MustafarContent.js`)
+    // })
+    // actions.createSlice({ 
+    //     id: `mygeetoContent`, 
+    //     component: require.resolve(`./src/components/PlanetContent/MygeetoContent.js`)
+    // })
+    // actions.createSlice({ 
+    //     id: `nabooContent`, 
+    //     component: require.resolve(`./src/components/PlanetContent/NabooContent.js`)
+    // })
+    // actions.createSlice({ 
+    //     id: `polisContent`, 
+    //     component: require.resolve(`./src/components/PlanetContent/PolisContent.js`)
+    // })
+    // actions.createSlice({ 
+    //     id: `tatooineContent`, 
+    //     component: require.resolve(`./src/components/PlanetContent/TatooineContent.js`)
+    // })
+    // actions.createSlice({ 
+    //     id: `yavinContent`, 
+    //     component: require.resolve(`./src/components/PlanetContent/YavinContent.js`)
+    // })
 }

@@ -96,7 +96,7 @@ export default function Shps({ data }) {
               <Link to="/ships/millenium-falcon"><button className="btn">View Bio</button></Link>
             </div>
             <div className="shipBoostGlow text-center pb-10">
-              <GatsbyImage image={data.awing.childImageSharp.gatsbyImageData} alt="A-Wing" />
+              <GatsbyImage image={data.AWing.childImageSharp.gatsbyImageData} alt="A-Wing" />
               <h3 className="text-center font-jedi text-2xl text-white pb-5 pt-5 underline">A-Wing</h3>
               <p className="pb-7 text-lg mx-8">A-Wing to go here with intro text and then to also have an image of him and once they have clicked on him it would take them to his individual page.</p>
               <Link to="/ships/death-star"><button className="btn">View Bio</button></Link>
@@ -143,68 +143,166 @@ export default function Shps({ data }) {
     )
  }
 
- export const ImageSettings = graphql `
- fragment ImageSettings on File {
-     childImageSharp {
-       gatsbyImageData(
-         layout: FULL_WIDTH
-         placeholder: BLURRED
-         formats: [AUTO]
-       )
-     }
-   }
- 
- `
-
- export const Images = graphql `
+export const GetImagesShips = graphql `
   query {
     xwing: file(relativePath: {eq: "x-wing-bio.png"}) {
-      ...ImageSettings
+      childImageSharp{
+        gatsbyImageData( 
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
+      }
     }
+
     falcon: file(relativePath: {eq: "falcon-bio.png"}) {
-      ...ImageSettings
+      childImageSharp{
+        gatsbyImageData( 
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
+      }
     }
+
     deathstar: file(relativePath: {eq: "death-star-bio.png"}) {
-      ...ImageSettings
+      childImageSharp{
+        gatsbyImageData( 
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
+      }
     }
+
     darthvadertiefighter: file(relativePath: {eq: "darth-vaders-tie-fighter-bio.jpg"}) {
-      ...ImageSettings
+      childImageSharp{
+        gatsbyImageData( 
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
+      }
     }
+
     slave1: file(relativePath: {eq: "slave-1.jpg"}) {
-      ...ImageSettings
+      childImageSharp{
+        gatsbyImageData( 
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
+      }
     }
+
     tiefighter: file(relativePath: {eq: "tie-fighter.jpg"}) {
-      ...ImageSettings
+      childImageSharp{
+        gatsbyImageData( 
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
+      }
     }
+
     asfbwing: file(relativePath: {eq: "asf-b-wing.png"}) {
-      ...ImageSettings
+      childImageSharp{
+        gatsbyImageData( 
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
+      }
     }
+
     theinterceptor: file(relativePath: {eq: "the-interceptor.jpg"}) {
-      ...ImageSettings
+      childImageSharp{
+        gatsbyImageData( 
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
+      }
     }
+
     cr90: file(relativePath: {eq: "cr90.png"}) {
-      ...ImageSettings
+      childImageSharp{
+        gatsbyImageData( 
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
+      }
     }
+
     stardestroyer: file(relativePath: {eq: "star-destroyer.jpg"}) {
-      ...ImageSettings
+      childImageSharp{
+        gatsbyImageData( 
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
+      }
     }
-    awing: file(relativePath: {eq: "a-wing.jpeg"}) {
-      ...ImageSettings
+
+    AWing: file(relativePath: {eq: "a-wing.jpeg"}) {
+      childImageSharp{
+        gatsbyImageData( 
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
+      }
     }
+
     superstar: file(relativePath: {eq: "super-star-destroyer.png"}) {
-      ...ImageSettings
+      childImageSharp{
+        gatsbyImageData( 
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
+      }
     }
+
     btlywing: file(relativePath: {eq: "btl-ywing.jpg"}) {
-      ...ImageSettings
+      childImageSharp{
+        gatsbyImageData( 
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
+      }
     }
+
     lambdaclass: file(relativePath: {eq: "lambda-class.png"}) {
-      ...ImageSettings
+      childImageSharp{
+        gatsbyImageData( 
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
+      }
     }
+
     nebulon: file(relativePath: {eq: "nebulon.jpg"}) {
-      ...ImageSettings
+      childImageSharp{
+        gatsbyImageData( 
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
+      }
     }
+
     solorsail: file(relativePath: {eq: "solor-sail.jpg"}) {
-      ...ImageSettings
+      childImageSharp{
+        gatsbyImageData( 
+          layout: FULL_WIDTH
+          placeholder: BLURRED
+          formats: WEBP
+        )
+      }
     }
-   }
+  }
 `
