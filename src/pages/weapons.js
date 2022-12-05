@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { GatsbyImage } from "gatsby-plugin-image"
+// import { GatsbyImage } from "gatsby-plugin-image"
 import { graphql, Link } from "gatsby";
 
 export const Head = () => <title>Weapons</title>

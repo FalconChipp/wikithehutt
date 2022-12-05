@@ -3,12 +3,14 @@ import Layout from "../../components/Layout";
 // import { graphql, Link } from "gatsby";
 // import { StaticImage, GatsbyImage } from "gatsby-plugin-image";
 import { siteMetadata } from "../../../gatsby-config";
+import { Slice } from "gatsby";
 
 export const Head = () => <title>{siteMetadata.title} - Coruscant</title>
 export default function Coruscant() {
     return (
         <Layout>
             <h1>Coruscant</h1>
+            <Slice alias="coruscantContent" />
         </Layout>
     )
 } 

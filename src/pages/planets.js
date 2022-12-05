@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
-import { GatsbyImage } from "gatsby-plugin-image"
-import { graphql, Link } from "gatsby";
+// import { GatsbyImage } from "gatsby-plugin-image"
+import { graphql } from "gatsby";
 import { siteMetadata } from "../../gatsby-config";
 
 export const Head = () => <title>{siteMetadata.title} - {siteMetadata.planets.title}</title>
