@@ -7,18 +7,6 @@
     src: url("../fonts/Starjedi.ttf");
 }
 
-.bg-brand {
-    @apply bg-cover bg-no-repeat bg-top;
-    background-image: linear-gradient(
-        rgba(18, 26, 46, 0.8)
-        rgba(18,26,46.0.8)
-    ),
-    background-image url(../../static/images/background.png)
-}
-.container-center {
-    @apply container mx-auto;
-
-}
 .btn {
     @apply font-dosis text-xl transition duration-500 ease-in-out bg-blueSaber text-white font-bold px-8 py-4 rounded-full focus:outline-none focus:ring transform hover:-translate-y-1 hover:scale-110;
 
@@ -55,7 +43,6 @@ p {
 .breadcrumb {
     @apply font-dosis text-lg text-white mx-5 ;
 }
-
 
 .buttonCool{
     @apply font-jedi text-2xl; 
